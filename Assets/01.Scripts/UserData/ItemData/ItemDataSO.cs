@@ -32,6 +32,8 @@ public class ItemData : ScriptableObject {
     
     [SerializeField]
     private List<Item> items = new List<Item>();
+    public List<Item> Items => items;
+    
     private Dictionary<string, Item> itemDictionary = new Dictionary<string, Item>();
 
     private void Awake() {
