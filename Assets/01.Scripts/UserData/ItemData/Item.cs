@@ -12,6 +12,10 @@ public class Item : MonoBehaviour {
     public int Cost => cost;
 
     [SerializeField]
+    private Sprite itemSprite;
+    public Sprite ItemSprite => itemSprite;
+    
+    [SerializeField]
     private string itemName;
     public string ItemName => itemName;
     
@@ -36,7 +40,4 @@ public class Item : MonoBehaviour {
     [SerializeField]
     private ItemType type;
     public ItemType Type => type;
-    
-    public virtual void Buy() { }
-    public virtual void Use() { }
 }
