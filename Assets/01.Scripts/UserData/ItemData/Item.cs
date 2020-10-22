@@ -12,6 +12,14 @@ public class Item : MonoBehaviour {
     public int Cost => cost;
 
     [SerializeField]
+    private string itemName;
+    public string ItemName => itemName;
+    
+    [SerializeField]
+    private string itemDescription;
+    public string ItemDescription => itemDescription;
+
+    [SerializeField]
     private bool isUnlock;
     public bool IsUnlock {
         get => isUnlock;
