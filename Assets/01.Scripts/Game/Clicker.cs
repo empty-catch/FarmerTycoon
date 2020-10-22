@@ -4,13 +4,19 @@ using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour {
     [SerializeField]
-    private uint increment;
-
-    [SerializeField]
     private uint autoIncrement;
 
     [SerializeField]
+    private uint touchIncrement;
+
+    [SerializeField]
     private Text coinText;
+
+    [SerializeField]
+    private Text autoIncrementText;
+
+    [SerializeField]
+    private Text touchIncrementText;
 
     private Tweener coinTweener;
 
@@ -20,13 +26,15 @@ public class Clicker : MonoBehaviour {
     }
 
     public void IncreaseCoin() {
-        Coin += increment;
+        Coin += touchIncrement;
         coinTweener.ChangeValues(Coin, Coin + autoIncrement);
         coinTweener.Restart();
     }
 
     private void Awake() {
-        Coin = 0;
+        autoIncrementText.text = $"{autoIncrement.ToKorean()}원/자동";
+        touchIncrementText.text = $"{touchIncrement.ToKorean()}원/터치";
+        
         coinTweener = DOTween.To(() => Coin, value => Coin = value, Coin + autoIncrement, 1f)
                              .OnUpdate(() => coinText.text = $"{Coin.ToKorean()}원").SetEase(Ease.Linear)
                              .SetLoops(-1, LoopType.Incremental);

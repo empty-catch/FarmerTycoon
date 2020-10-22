@@ -36,4 +36,8 @@ public static class Number {
 
         return Builder.ToString();
     }
+
+    public static string ToKorean(this uint number) {
+        return ToKorean((ulong)number);
+    }
 }
