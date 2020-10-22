@@ -1,23 +1,19 @@
 ﻿using DG.Tweening;
+using Slash.Unity.DataBind.Core.Presentation;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour {
+    [SerializeField]
+    private ContextHolder contextHolder;
+
     [SerializeField]
     private uint autoIncrement;
 
     [SerializeField]
     private uint touchIncrement;
 
-    [SerializeField]
-    private Text coinText;
-
-    [SerializeField]
-    private Text autoIncrementText;
-
-    [SerializeField]
-    private Text touchIncrementText;
-
+    private MainContext context;
     private Tweener coinTweener;
 
     private static ulong Coin {
@@ -32,11 +28,14 @@ public class Clicker : MonoBehaviour {
     }
 
     private void Awake() {
-        autoIncrementText.text = $"{autoIncrement.ToKorean()}원/자동";
-        touchIncrementText.text = $"{touchIncrement.ToKorean()}원/터치";
-        
+        context = new MainContext {
+            AutoIncrement = autoIncrement,
+            TouchIncrement = touchIncrement
+        };
+        contextHolder.Context = context;
+
         coinTweener = DOTween.To(() => Coin, value => Coin = value, Coin + autoIncrement, 1f)
-                             .OnUpdate(() => coinText.text = $"{Coin.ToKorean()}원").SetEase(Ease.Linear)
+                             .OnUpdate(() => context.Coin = Coin).SetEase(Ease.Linear)
                              .SetLoops(-1, LoopType.Incremental);
     }
 }

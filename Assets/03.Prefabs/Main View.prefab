@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 8650179580991326293}
   - component: {fileID: 8650179580991326291}
   - component: {fileID: 8650179580991326290}
+  - component: {fileID: 4152668338319346595}
+  - component: {fileID: 5126759312368394483}
   m_Layer: 5
   m_Name: Touch Increment
   m_TagString: Untagged
@@ -171,6 +173,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &4152668338319346595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179580991326288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0665bea460c82343b343b8da0c48261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: TouchIncrement
+    Provider: {fileID: 5126759312368394483}
+    Reference: {fileID: 0}
+    Type: 1
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 8650179580991326291}
+    Type: 3
+  constantTarget: {fileID: 0}
+--- !u!114 &5126759312368394483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179580991326288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefix: "\uC6D0/\uD130\uCE58"
+  argument:
+    Constant: 
+    Path: TouchIncrement
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
 --- !u!1 &8650179581017517640
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Clicker
+  m_Text: Button
 --- !u!1 &8650179581503192555
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +781,8 @@ GameObject:
   - component: {fileID: 8650179581680808305}
   - component: {fileID: 8650179581680808304}
   - component: {fileID: 8650179581680808318}
+  - component: {fileID: 6259119516574085310}
+  - component: {fileID: 5285209980698103816}
   m_Layer: 5
   m_Name: Coin
   m_TagString: Untagged
@@ -818,6 +866,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &6259119516574085310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179581680808316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0665bea460c82343b343b8da0c48261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: CoinText
+    Provider: {fileID: 5285209980698103816}
+    Reference: {fileID: 0}
+    Type: 1
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 8650179581680808304}
+    Type: 3
+  constantTarget: {fileID: 0}
+--- !u!114 &5285209980698103816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179581680808316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefix: "\uC6D0"
+  argument:
+    Constant: 
+    Path: Coin
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
 --- !u!1 &8650179581864264467
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +1043,8 @@ GameObject:
   - component: {fileID: 8650179581903531782}
   - component: {fileID: 8650179581903531801}
   - component: {fileID: 8650179581903531783}
+  - component: {fileID: 4438746627015936174}
+  - component: {fileID: 1993983329340141230}
   m_Layer: 5
   m_Name: Auto Increment
   m_TagString: Untagged
@@ -1033,6 +1127,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &4438746627015936174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179581903531781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0665bea460c82343b343b8da0c48261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: AutoIncrement
+    Provider: {fileID: 1993983329340141230}
+    Reference: {fileID: 0}
+    Type: 1
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 8650179581903531801}
+    Type: 3
+  constantTarget: {fileID: 0}
+--- !u!114 &1993983329340141230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179581903531781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefix: "\uC6D0/\uC790\uB3D9"
+  argument:
+    Constant: 
+    Path: AutoIncrement
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
 --- !u!1 &8650179581915573106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1419,7 @@ GameObject:
   - component: {fileID: 8650179582150475418}
   - component: {fileID: 8650179582150475423}
   - component: {fileID: 8650179582150475421}
+  - component: {fileID: 8650179582146229835}
   m_Layer: 5
   m_Name: Main View
   m_TagString: Untagged
@@ -1348,6 +1487,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8650179582146229835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650179582150475419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353de6b5a9e8fa4eaded0354856aa9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextType: MainContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  createContext: 0
 --- !u!1 &8650179582353667640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,8 +1847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badb4f674d704a56bc71f7805edc7e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoIncrement: 1110000
-  touchIncrement: 1110000
-  coinText: {fileID: 8650179581680808304}
-  autoIncrementText: {fileID: 8650179581903531801}
-  touchIncrementText: {fileID: 8650179580991326291}
+  contextHolder: {fileID: 8650179582146229835}
+  autoIncrement: 4294967295
+  touchIncrement: 4294967295
