@@ -1,15 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour {
+[Serializable]
+public class Item {
     [SerializeField]
     private string key;
     public string Key => key;
     
     [SerializeField]
-    private int cost;
-    public int Cost => cost;
+    private ulong cost;
+    public ulong Cost => cost;
 
     [SerializeField]
     private Sprite itemSprite;
