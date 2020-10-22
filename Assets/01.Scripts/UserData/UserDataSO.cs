@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class UserData : ScriptableObject {
     private static UserData instance;
+
     public static UserData Instance {
         get {
-            if (instance is null) { 
+            if (instance is null) {
                 var userData = Resources.Load<UserData>("GameData/UserData");
                 if (userData is null) {
                     var path = "Assets/Resources/GameData";
@@ -28,6 +29,7 @@ public class UserData : ScriptableObject {
     }
 
     private uint coin;
+
     public uint Coin {
         get => coin;
         set => coin = value;

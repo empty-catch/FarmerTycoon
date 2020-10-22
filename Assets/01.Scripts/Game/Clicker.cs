@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour {
     [SerializeField]
-    private int increase;
+    private int increment;
 
     [SerializeField]
-    private UnityEvent<string> onClicked;
+    private int autoIncrement;
+
+    [SerializeField]
+    private Text coinText;
 
     private int coin;
 
     public void IncreaseCoin() {
-        coin += increase;
-        onClicked?.Invoke(coin.ToString());
+        coin += increment;
+        coinText.text = coin.ToString();
     }
 }
