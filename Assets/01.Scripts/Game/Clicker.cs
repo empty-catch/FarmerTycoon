@@ -5,27 +5,31 @@ using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour {
     [SerializeField]
-    private int increment;
+    private uint increment;
 
     [SerializeField]
-    private int autoIncrement;
+    private uint autoIncrement;
 
     [SerializeField]
     private Text coinText;
 
-    private int coin;
     private Tweener coinTweener;
 
+    private static uint Coin {
+        get => UserData.Instance.Coin;
+        set => UserData.Instance.Coin = value;
+    }
+
     public void IncreaseCoin() {
-        coin += increment;
-        coinText.text = coin.ToString();
-        coinTweener.ChangeValues(coin, coin + autoIncrement);
+        Coin += increment;
+        coinText.text = Coin.ToString();
+        coinTweener.ChangeValues(Coin, Coin + autoIncrement);
         coinTweener.Restart();
     }
 
     private void Awake() {
-        coinTweener = DOTween.To(() => coin, value => coin = value, coin + autoIncrement, 1f)
-                             .OnUpdate(() => coinText.text = coin.ToString()).SetEase(Ease.Linear)
+        coinTweener = DOTween.To(() => Coin, value => Coin = value, Coin + autoIncrement, 1f)
+                             .OnUpdate(() => coinText.text = Coin.ToString()).SetEase(Ease.Linear)
                              .SetLoops(-1, LoopType.Incremental);
     }
 }
