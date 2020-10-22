@@ -364,8 +364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badb4f674d704a56bc71f7805edc7e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increment: 1000
-  autoIncrement: 1000
+  increment: 4294967295
+  autoIncrement: 4294967295
   coinText: {fileID: 589300541}
 --- !u!1 &1304593003
 GameObject:

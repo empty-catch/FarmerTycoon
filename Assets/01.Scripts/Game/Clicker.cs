@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,21 +14,21 @@ public class Clicker : MonoBehaviour {
 
     private Tweener coinTweener;
 
-    private static uint Coin {
+    private static ulong Coin {
         get => UserData.Instance.Coin;
         set => UserData.Instance.Coin = value;
     }
 
     public void IncreaseCoin() {
         Coin += increment;
-        coinText.text = Coin.ToString();
         coinTweener.ChangeValues(Coin, Coin + autoIncrement);
         coinTweener.Restart();
     }
 
     private void Awake() {
+        Coin = 0;
         coinTweener = DOTween.To(() => Coin, value => Coin = value, Coin + autoIncrement, 1f)
-                             .OnUpdate(() => coinText.text = Coin.ToString()).SetEase(Ease.Linear)
+                             .OnUpdate(() => coinText.text = $"{Coin.ToKorean()}원").SetEase(Ease.Linear)
                              .SetLoops(-1, LoopType.Incremental);
     }
 }

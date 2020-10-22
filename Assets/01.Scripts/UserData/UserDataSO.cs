@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using UnityEditor;
 using UnityEngine;
 
@@ -28,9 +28,9 @@ public class UserData : ScriptableObject {
         }
     }
 
-    private uint coin;
+    private ulong coin;
 
-    public uint Coin {
+    public ulong Coin {
         get => coin;
         set => coin = value;
     }
