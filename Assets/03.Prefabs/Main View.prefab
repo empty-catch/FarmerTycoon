@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdditionalArguments: []
-  Path: IncreaseCoin
+  Path: MainContext.IncreaseCoin
   Target: {fileID: 8076009226718016957}
 --- !u!1 &8060478424539463143
 GameObject:
@@ -612,7 +612,7 @@ MonoBehaviour:
   prefix: "\uC6D0/\uD130\uCE58"
   argument:
     Constant: 
-    Path: TouchIncrement
+    Path: MainContext.TouchIncrement
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -1226,7 +1226,7 @@ MonoBehaviour:
   prefix: "\uC6D0"
   argument:
     Constant: 
-    Path: Coin
+    Path: MainContext.Coin
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   prefix: "\uC6D0/\uC790\uB3D9"
   argument:
     Constant: 
-    Path: AutoIncrement
+    Path: MainContext.AutoIncrement
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -1740,7 +1740,6 @@ GameObject:
   - component: {fileID: 8650179582150475423}
   - component: {fileID: 8650179582150475421}
   - component: {fileID: 869476844365176558}
-  - component: {fileID: 4304568257241033451}
   m_Layer: 5
   m_Name: Main View
   m_TagString: Untagged
@@ -1821,19 +1820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5acef0e71e4c38a8fbe67ca1a2d450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4304568257241033451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8650179582150475419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef131d959021b5c48a81190c2a4a8457, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: MainContext
 --- !u!1 &8650179582353667640
 GameObject:
   m_ObjectHideFlags: 0
