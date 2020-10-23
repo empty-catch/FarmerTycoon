@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Slash.Unity.DataBind.Core.Presentation;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,9 @@ public class StoreHUD : UIBase {
             throw new ArgumentException("Too many argument count.");
         }
 
+        var contextHolder = gameObject.GetComponentSafe<ContextHolder>();
+        contextHolder.Context = new StoreHUDContext();
+        
         gameObject.SetActive(true);
     }
 
