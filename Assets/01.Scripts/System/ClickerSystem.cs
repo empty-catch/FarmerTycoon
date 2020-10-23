@@ -34,7 +34,7 @@ public class ClickerSystem : MonoBehaviour {
 
     private void IncreaseCoin() {
         Coin += touchIncrement;
-        coinTweener.ChangeValues(Coin, Coin + autoIncrement);
+        coinTweener.ChangeValues(Coin, Coin + touchIncrement);
         coinTweener.Restart();
     }
 }
