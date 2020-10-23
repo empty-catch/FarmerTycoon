@@ -7,7 +7,10 @@ using UnityEngine.UI;
 
 public class StoreHUD : UIBase {
     [SerializeField]
-    private GameObject elementParent;
+    private GameObject pivot;
+    
+    [SerializeField]
+    private GameObject[] elementParents;
     
     [SerializeField]
     private GameObject itemElement;
@@ -32,10 +35,18 @@ public class StoreHUD : UIBase {
 
     private void CreateItems() {
         var objectInterval = itemElement.GetComponent<RectTransform>().sizeDelta.y;
-        
-        for (int i = 0; i < ItemData.Instance.Items.Count; i++) {
+
+        ItemData itemData = ItemData.Instance;
+        for (int i = 0; i < itemData.Items.Count; i++) {
+            var elementParent = itemData.Items[i].Type switch {
+                ItemType.Closet => elementParents[0],
+                ItemType.Animal => elementParents[1],
+                ItemType.Plant => elementParents[2],
+                ItemType.Tool => elementParents[3],
+            };
+            
             var newItem = Instantiate(itemElement, elementParent.transform).GetComponentSafe<ItemUIElement>();
-            newItem.Initialize(ItemData.Instance.Items[i]);
+            newItem.Initialize(itemData.Items[i]);
             
             newItem.gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, -i * objectInterval);
             
