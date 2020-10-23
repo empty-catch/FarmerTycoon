@@ -3,10 +3,12 @@ using Slash.Unity.DataBind.Core.Presentation;
 using UnityEngine;
 
 public class MasterContext : Context {
+    private readonly Property<StartContext> startContextProperty = new Property<StartContext>();
     private readonly Property<MainContext> mainContextProperty = new Property<MainContext>();
     private static MasterContext instance;
 
     private MasterContext() {
+        StartContext = new StartContext();
         MainContext = new MainContext();
     }
 
@@ -21,6 +23,11 @@ public class MasterContext : Context {
             contextHolder.Context = instance;
             return instance;
         }
+    }
+
+    public StartContext StartContext {
+        get => startContextProperty.Value;
+        private set => startContextProperty.Value = value;
     }
 
     public MainContext MainContext {

@@ -463,6 +463,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
+    - target: {fileID: 2039675759130979821, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655650134582466251, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
+      propertyPath: m_Name
+      value: Start Button
+      objectReference: {fileID: 0}
     - target: {fileID: 5594572254164589294, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -560,10 +568,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
-    - target: {fileID: 3679151080445040762, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: Path
-      value: IncreaseCoin
-      objectReference: {fileID: 0}
     - target: {fileID: 8650179580991326292, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -571,6 +575,10 @@ PrefabInstance:
     - target: {fileID: 8650179581680808319, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650179581864264466, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 18.75003
       objectReference: {fileID: 0}
     - target: {fileID: 8650179581903531780, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -622,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8650179582150475418, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1593
       objectReference: {fileID: 0}
     - target: {fileID: 8650179582150475418, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -663,42 +671,6 @@ PrefabInstance:
     - target: {fileID: 8650179582150475419, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_Name
       value: Main View
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176013, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_Name
-      value: Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Clicker, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179582640176014, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e1eac673833ce42be417647d7b319e, type: 3}

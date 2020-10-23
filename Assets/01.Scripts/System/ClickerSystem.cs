@@ -11,6 +11,7 @@ public class ClickerSystem : MonoBehaviour {
 
     private Tweener coinTweener;
 
+    private static StartContext StartContext => MasterContext.Instance.StartContext;
     private static MainContext MainContext => MasterContext.Instance.MainContext;
 
     private static ulong Coin {
@@ -19,10 +20,13 @@ public class ClickerSystem : MonoBehaviour {
     }
 
     private void Awake() {
+        StartContext.StartedGame += StartIncreasing;
         MainContext.IncreasingCoin += IncreaseCoin;
         MainContext.AutoIncrement = autoIncrement;
         MainContext.TouchIncrement = touchIncrement;
+    }
 
+    private void StartIncreasing() {
         coinTweener = DOTween.To(() => Coin, value => Coin = value, Coin + autoIncrement, 1f)
                              .OnUpdate(() => MainContext.Coin = Coin).SetEase(Ease.Linear)
                              .SetLoops(-1, LoopType.Incremental);

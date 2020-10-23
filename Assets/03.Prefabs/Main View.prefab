@@ -213,7 +213,7 @@ MonoBehaviour:
   prefix: "\uC6D0/\uD130\uCE58"
   argument:
     Constant: 
-    Path: TouchIncrement
+    Path: MainContext.TouchIncrement
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -906,7 +906,7 @@ MonoBehaviour:
   prefix: "\uC6D0"
   argument:
     Constant: 
-    Path: Coin
+    Path: MainContext.Coin
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   prefix: "\uC6D0/\uC790\uB3D9"
   argument:
     Constant: 
-    Path: AutoIncrement
+    Path: MainContext.AutoIncrement
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -1419,7 +1419,7 @@ GameObject:
   - component: {fileID: 8650179582150475418}
   - component: {fileID: 8650179582150475423}
   - component: {fileID: 8650179582150475421}
-  - component: {fileID: 2341866817355511739}
+  - component: {fileID: 869476844365176558}
   m_Layer: 5
   m_Name: Main View
   m_TagString: Untagged
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2341866817355511739
+--- !u!114 &869476844365176558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1496,10 +1496,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8650179582150475419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef131d959021b5c48a81190c2a4a8457, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c5acef0e71e4c38a8fbe67ca1a2d450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: MainContext
 --- !u!1 &8650179582353667640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1713,7 @@ GameObject:
   - component: {fileID: 8650179582640176014}
   - component: {fileID: 3679151080445040762}
   m_Layer: 5
-  m_Name: Clicker
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1791,7 +1790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1821,19 +1820,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8650179582640176001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Clicker, Assembly-CSharp
-        m_MethodName: IncreaseCoin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &3679151080445040762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1847,5 +1834,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdditionalArguments: []
-  Path: 
+  Path: MainContext.IncreaseCoin
   Target: {fileID: 8650179582640176014}
