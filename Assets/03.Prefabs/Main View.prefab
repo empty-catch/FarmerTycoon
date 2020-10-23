@@ -1419,7 +1419,7 @@ GameObject:
   - component: {fileID: 8650179582150475418}
   - component: {fileID: 8650179582150475423}
   - component: {fileID: 8650179582150475421}
-  - component: {fileID: 8650179582146229835}
+  - component: {fileID: 2341866817355511739}
   m_Layer: 5
   m_Name: Main View
   m_TagString: Untagged
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8650179582146229835
+--- !u!114 &2341866817355511739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1496,11 +1496,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8650179582150475419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0353de6b5a9e8fa4eaded0354856aa9e, type: 3}
+  m_Script: {fileID: 11500000, guid: ef131d959021b5c48a81190c2a4a8457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextType: MainContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  createContext: 0
+  Path: MainContext
 --- !u!1 &8650179582353667640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1712,7 @@ GameObject:
   - component: {fileID: 8650179582640176000}
   - component: {fileID: 8650179582640176001}
   - component: {fileID: 8650179582640176014}
-  - component: {fileID: 8650179582640176015}
+  - component: {fileID: 3679151080445040762}
   m_Layer: 5
   m_Name: Clicker
   m_TagString: Untagged
@@ -1823,7 +1822,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8650179582640176015}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Clicker, Assembly-CSharp
         m_MethodName: IncreaseCoin
         m_Mode: 1
@@ -1835,7 +1834,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8650179582640176015
+--- !u!114 &3679151080445040762
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1844,9 +1843,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8650179582640176013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: badb4f674d704a56bc71f7805edc7e60, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c7aab7f21b3fc04b9d4949573c4830c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextHolder: {fileID: 8650179582146229835}
-  autoIncrement: 4294967295
-  touchIncrement: 4294967295
+  AdditionalArguments: []
+  Path: 
+  Target: {fileID: 8650179582640176014}

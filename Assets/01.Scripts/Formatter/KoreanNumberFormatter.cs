@@ -10,11 +10,11 @@ public class KoreanNumberFormatter : DataProvider {
 
     public override object Value => $"{argument.GetValue<ulong>().ToKorean()}{prefix}";
 
-    protected new void Awake() {
+    public override void Init() {
         AddBinding(argument);
     }
 
     protected override void UpdateValue() {
-        OnValueChanged(Value);
+        OnValueChanged();
     }
 }
