@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 2039675759130979821}
   - component: {fileID: 7093599427443805549}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 5
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdditionalArguments: []
-  Path: StartContext.StartGame
+  Path: StartGame
   Target: {fileID: 2039675759130979821}
 --- !u!1 &5594572254164589295
 GameObject:
@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 5594572254164589280}
   - component: {fileID: 5594572254164589281}
   - component: {fileID: 2200701161944907275}
+  - component: {fileID: 4432502430887583696}
   m_Layer: 5
   m_Name: Start View
   m_TagString: Untagged
@@ -361,6 +362,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f1181bfa044ea5aa01518c709ad6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4432502430887583696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5594572254164589295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef131d959021b5c48a81190c2a4a8457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: StartContext
 --- !u!1 &5849437942587337851
 GameObject:
   m_ObjectHideFlags: 0

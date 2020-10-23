@@ -139,6 +139,8 @@ GameObject:
   - component: {fileID: 939413811}
   - component: {fileID: 939413813}
   - component: {fileID: 939413812}
+  - component: {fileID: 939413815}
+  - component: {fileID: 939413814}
   m_Layer: 5
   m_Name: Stage View
   m_TagString: Untagged
@@ -203,6 +205,31 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &939413814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939413810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef131d959021b5c48a81190c2a4a8457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: StageContext
+--- !u!114 &939413815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939413810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877790b1ac5943f88b942fe6ab24350e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &957498439 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5594572254164589294, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
@@ -539,14 +566,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
-    - target: {fileID: 2039675759130979821, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
-      propertyPath: m_Colors.m_ColorMultiplier
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3655650134582466251, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
-      propertyPath: m_Name
-      value: Start Button
-      objectReference: {fileID: 0}
     - target: {fileID: 5594572254164589294, guid: e123b0e05a9c76b438edb30c9f6845ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -644,10 +663,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
-    - target: {fileID: 7220360801261396157, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -443.51996
-      objectReference: {fileID: 0}
     - target: {fileID: 8650179580991326292, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

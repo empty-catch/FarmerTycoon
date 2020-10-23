@@ -5,11 +5,14 @@ using UnityEngine;
 public class MasterContext : Context {
     private readonly Property<StartContext> startContextProperty = new Property<StartContext>();
     private readonly Property<MainContext> mainContextProperty = new Property<MainContext>();
+    private readonly Property<StageContext> stageContextProperty = new Property<StageContext>();
+    
     private static MasterContext instance;
 
     private MasterContext() {
         StartContext = new StartContext();
         MainContext = new MainContext();
+        StageContext = new StageContext();
     }
 
     public static MasterContext Instance {
@@ -33,5 +36,10 @@ public class MasterContext : Context {
     public MainContext MainContext {
         get => mainContextProperty.Value;
         private set => mainContextProperty.Value = value;
+    }
+
+    public StageContext StageContext {
+        get => stageContextProperty.Value;
+        private set => stageContextProperty.Value = value;
     }
 }
