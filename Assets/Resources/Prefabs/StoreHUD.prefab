@@ -647,6 +647,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 342611574118785718}
+  - component: {fileID: 5274505383869664493}
+  - component: {fileID: 1445302530245020140}
+  - component: {fileID: 4297089966526164915}
+  - component: {fileID: 6861040339641436405}
   m_Layer: 5
   m_Name: ElementParents
   m_TagString: Untagged
@@ -678,6 +682,110 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -308.61}
   m_SizeDelta: {x: 1080, y: 1302.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5274505383869664493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342611574118785719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: IsCurrentTapCloset
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 2096210821409829905}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 0
+--- !u!114 &1445302530245020140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342611574118785719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: IsCurrentTapAnimal
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 8999488757774794281}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 0
+--- !u!114 &4297089966526164915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342611574118785719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: IsCurrentTapPlant
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 4024298845653132894}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 0
+--- !u!114 &6861040339641436405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342611574118785719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: IsCurrentTapTool
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 4447878826667901509}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 0
 --- !u!1 &342611574461649708
 GameObject:
   m_ObjectHideFlags: 0
