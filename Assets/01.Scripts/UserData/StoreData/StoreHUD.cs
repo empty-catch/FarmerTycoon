@@ -48,7 +48,9 @@ public class StoreHUD : UIBase {
             var newItem = Instantiate(itemElement, elementParent.transform).GetComponentSafe<ItemUIElement>();
             newItem.Initialize(itemData.Items[i]);
             
-            newItem.gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, -i * objectInterval);
+            var childCount = elementParent.transform.childCount; 
+            
+            newItem.gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, pivot.transform.localPosition.y + (-childCount * objectInterval));
             
             items.Add(newItem);
         }
