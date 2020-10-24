@@ -7,7 +7,7 @@ public class StageButtonContext : Context {
     
     private readonly Property<string> stageNameProperty = new Property<string>();
     private readonly Property<ulong> costProperty = new Property<ulong>();
-    private readonly Property<Sprite> logoProperty = new Property<Sprite>();
+    private readonly Property<Color> colorProperty = new Property<Color>();
 
     public string StageName {
         get => stageNameProperty.Value;
@@ -17,6 +17,11 @@ public class StageButtonContext : Context {
     public ulong Cost {
         get => costProperty.Value;
         private set => costProperty.Value = value;
+    }
+
+    public Color Color {
+        get => colorProperty.Value;
+        set => colorProperty.Value = value;
     }
 
     public StageButtonContext(string stageName, ulong cost) {

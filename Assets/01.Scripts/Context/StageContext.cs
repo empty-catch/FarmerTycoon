@@ -26,4 +26,10 @@ public class StageContext : Context {
         UIManager.Instance.OpenUI<MainUI>();
         UIManager.Instance.CloseUI<StageUI>();
     }
+
+    public void ResetButtonsColor() {
+        foreach (var context in StageButtonContexts) {
+            context.Color = new Color32(224, 241, 194, 255);
+        }
+    }
 }

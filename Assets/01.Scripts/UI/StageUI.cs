@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Linq;
-using Slash.Unity.DataBind.Core.Data;
 using UnityEngine;
 
 public class StageUI : UIBase {
@@ -21,10 +19,16 @@ public class StageUI : UIBase {
         StageContext.Logo = datas[0].logo;
         foreach (var data in datas) {
             var context = new StageButtonContext(data.title, data.cost);
-            context.StageChanged += () => StageContext.Logo = data.logo;
             StageContext.StageButtonContexts.Add(context);
+
+            context.StageChanged += () => {
+                StageContext.Logo = data.logo;
+                StageContext.ResetButtonsColor();
+                context.Color = new Color32(237, 225, 86, 255);
+            };
         }
 
+        StageContext.ResetButtonsColor();
         transform.position = Vector3.zero;
         CloseUI();
     }
