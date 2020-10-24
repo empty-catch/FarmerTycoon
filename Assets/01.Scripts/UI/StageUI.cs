@@ -20,7 +20,9 @@ public class StageUI : UIBase {
     private void Awake() {
         StageContext.Logo = datas[0].logo;
         foreach (var data in datas) {
-            StageContext.StageButtonContexts.Add(new StageButtonContext(data.title, data.cost));
+            var context = new StageButtonContext(data.title, data.cost);
+            context.StageChanged += () => StageContext.Logo = data.logo;
+            StageContext.StageButtonContexts.Add(context);
         }
 
         transform.position = Vector3.zero;
