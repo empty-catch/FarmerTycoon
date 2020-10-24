@@ -19,7 +19,7 @@ public class ItemUIElement : MonoBehaviour {
         information = itemData;
         eyeCatch.sprite = itemData.ItemSprite;
         name.text = itemData.ItemName;
-        cost.text = itemData.Cost[itemData.ItemLevel].ToKorean().ToString();
+        cost.text = $"{itemData.Cost[itemData.ItemLevel].ToKorean().ToString()} 원";
     }
 
     public void BuyItem() {    

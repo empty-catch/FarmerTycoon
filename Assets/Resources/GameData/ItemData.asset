@@ -280,8 +280,8 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: ec56ebf0f2b0448558e0f2894d1fe9ff, type: 3}
     itemName: "\uB18D\uBD80\uBCF5"
     itemDescription: 
-    isUnlock: 0
-    isUse: 0
+    isUnlock: 1
+    isUse: 1
     type: 0
   - key: Cook
     cost: e093040000000000f049020000000000e093040000000000
