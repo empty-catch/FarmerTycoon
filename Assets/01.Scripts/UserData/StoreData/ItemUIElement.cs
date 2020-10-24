@@ -19,11 +19,12 @@ public class ItemUIElement : MonoBehaviour {
         information = itemData;
         eyeCatch.sprite = itemData.ItemSprite;
         name.text = itemData.ItemName;
-        cost.text = itemData.Cost.ToKorean().ToString();
+        cost.text = $"{itemData.Cost[itemData.ItemLevel].ToKorean().ToString()} 원";
     }
 
-    public void BuyItem() {
-        if (UserData.Instance.Coin < information.Cost) {
+    public void BuyItem() {    
+        if (UserData.Instance.Coin < information.Cost[information.ItemLevel]) {
+            "Not enough coin.".Log();
             return;
         }
 

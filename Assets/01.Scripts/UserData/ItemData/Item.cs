@@ -10,9 +10,17 @@ public class Item {
     public string Key => key;
     
     [SerializeField]
-    private ulong cost;
-    public ulong Cost => cost;
+    private ulong[] cost;
+    public ulong[] Cost => cost;
 
+    [SerializeField]
+    private int[] value;
+    public int[] Value => value;
+
+    [SerializeField]
+    private int itemLevel;
+    public int ItemLevel => itemLevel;
+    
     [SerializeField]
     private Sprite itemSprite;
     public Sprite ItemSprite => itemSprite;

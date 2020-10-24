@@ -1,12 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Slash.Unity.DataBind.Core.Presentation;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoreHUD : UIBase {
     [SerializeField]
-    private GameObject elementParent;
+    private GameObject pivot;
+    
+    [SerializeField]
+    private GameObject[] elementParents;
     
     [SerializeField]
     private GameObject itemElement;
@@ -23,17 +27,34 @@ public class StoreHUD : UIBase {
             throw new ArgumentException("Too many argument count.");
         }
 
+        var contextHolder = gameObject.GetComponentSafe<ContextHolder>();
+        contextHolder.Context = new StoreHUDContext();
+        
         gameObject.SetActive(true);
     }
 
     private void CreateItems() {
         var objectInterval = itemElement.GetComponent<RectTransform>().sizeDelta.y;
-        
-        for (int i = 0; i < ItemData.Instance.Items.Count; i++) {
-            var newItem = Instantiate(itemElement, elementParent.transform).GetComponentSafe<ItemUIElement>();
-            newItem.Initialize(ItemData.Instance.Items[i]);
+
+        ItemData itemData = ItemData.Instance;
+        for (int i = 0; i < itemData.Items.Count; i++) {
+            if (itemData.Items[i].IsUnlock) {
+                continue;
+            }
             
-            newItem.gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, -i * objectInterval);
+            var elementParent = itemData.Items[i].Type switch {
+                ItemType.Closet => elementParents[0],
+                ItemType.Animal => elementParents[1],
+                ItemType.Plant => elementParents[2],
+                ItemType.Tool => elementParents[3],
+            };
+            
+            var newItem = Instantiate(itemElement, elementParent.transform).GetComponentSafe<ItemUIElement>();
+            newItem.Initialize(itemData.Items[i]);
+            
+            var childCount = elementParent.transform.childCount; 
+            
+            newItem.gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, pivot.transform.localPosition.y + (-childCount * objectInterval));
             
             items.Add(newItem);
         }
