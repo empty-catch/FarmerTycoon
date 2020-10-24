@@ -7,7 +7,7 @@ public class MasterContext : Context {
     private readonly Property<CoinContext> coinContextProperty = new Property<CoinContext>();
     private readonly Property<MainContext> mainContextProperty = new Property<MainContext>();
     private readonly Property<StageContext> stageContextProperty = new Property<StageContext>();
-    
+
     private static MasterContext instance;
 
     private MasterContext() {

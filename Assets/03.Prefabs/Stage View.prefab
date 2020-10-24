@@ -484,7 +484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20, y: -75.211}
+  m_AnchoredPosition: {x: -50, y: -75}
   m_SizeDelta: {x: 320, y: 160}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &895990058
@@ -1141,6 +1141,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877790b1ac5943f88b942fe6ab24350e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  datas:
+  - title: "\uACBD\uC0C1\uB3C4"
+    cost: 0
+    logo: {fileID: 21300000, guid: fd3668a1f5e694543aac5a9bded138f7, type: 3}
+  - title: "\uAC15\uC6D0\uB3C4"
+    cost: 1200000000
+    logo: {fileID: 21300000, guid: 735ae38b8f892704c9bad8f0096055fc, type: 3}
+  - title: "\uACBD\uAE30\uB3C4"
+    cost: 2400000000
+    logo: {fileID: 21300000, guid: 110a395b9c8454d4f94b9d484a6d5bd9, type: 3}
+  - title: "\uC81C\uC8FC\uB3C4"
+    cost: 4800000000
+    logo: {fileID: 21300000, guid: fcdbe5181ae6a6c4e81314d6ac2580af, type: 3}
+  - title: "\uC11C\uC6B8"
+    cost: 8000000000
+    logo: {fileID: 21300000, guid: e7db3bd677db872469b414165994f89d, type: 3}
 --- !u!1 &2814188940672960773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,6 +1356,7 @@ GameObject:
   - component: {fileID: 6576874756992056183}
   - component: {fileID: 4565120626498109984}
   - component: {fileID: 2742666651122637436}
+  - component: {fileID: 1504747154291166782}
   m_Layer: 5
   m_Name: Logo
   m_TagString: Untagged
@@ -1404,3 +1421,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1504747154291166782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107680522473715910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: StageContext.Logo
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 2742666651122637436}
+    Type: 3
+  constantTarget: {fileID: 0}

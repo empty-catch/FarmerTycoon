@@ -1,8 +1,10 @@
 ﻿using Slash.Unity.DataBind.Core.Data;
+using UnityEngine;
 
 public class StageButtonContext : Context {
     private readonly Property<string> stageNameProperty = new Property<string>();
     private readonly Property<ulong> costProperty = new Property<ulong>();
+    private readonly Property<Sprite> logoProperty = new Property<Sprite>();
 
     public string StageName {
         get => stageNameProperty.Value;
