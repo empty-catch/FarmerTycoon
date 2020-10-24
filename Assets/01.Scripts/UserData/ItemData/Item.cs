@@ -14,6 +14,10 @@ public class Item {
     public ulong[] Cost => cost;
 
     [SerializeField]
+    private int[] value;
+    public int[] Value => value;
+
+    [SerializeField]
     private int itemLevel;
     public int ItemLevel => itemLevel;
     

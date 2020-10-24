@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e4bb37ed29d493fb0d9efcc39e62b4, type: 3}
+  m_Name: ItemData
+  m_EditorClassIdentifier: 
+  items:
+  - key: Mushroom
+    cost: 640000000000000032000000000000006400000000000000
+    value: 030000000500000008000000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: ce2132d527e98b9418ef24484e7399a8, type: 3}
+    itemName: "\uBC84\uC12F"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Carrot
+    cost: 2c0100000000000096000000000000002c01000000000000
+    value: 0a0000000f00000019000000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: aafc90d3b2c7d6e4cbbb9d21832eeeb4, type: 3}
+    itemName: "\uB2F9\uADFC"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Onion
+    cost: 8403000000000000c2010000000000008403000000000000
+    value: 200000003000000050000000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 663701ae725690b49a62734a3cf13e54, type: 3}
+    itemName: "\uD30C"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Corn
+    cost: 080700000000000084030000000000000807000000000000
+    value: 4200000063000000a5000000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: a24083ced5240f74281d0059ed8b4acd, type: 3}
+    itemName: "\uC625\uC218\uC218"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Rice
+    cost: 100e0000000000000807000000000000100e000000000000
+    value: 86000000c90000004f010000
+    itemLevel: 0
+    itemSprite: {fileID: 0}
+    itemName: "\uBCBC"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Radish
+    cost: 201c000000000000100e000000000000201c000000000000
+    value: 0e01000095010000a3020000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: d818604b0fbeab241ad2c340df5d9912, type: 3}
+    itemName: "\uBB34"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Cabbage
+    cost: 4038000000000000201c0000000000004038000000000000
+    value: 300200004803000078050000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 405a7601f2aa3144dbf762338ec230cd, type: 3}
+    itemName: "\uBC30\uCD94"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Pumpkin
+    cost: 807000000000000040380000000000008070000000000000
+    value: 74040000ae060000220b0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 493b491932ec1b64d86dcbc60ca9ae31, type: 3}
+    itemName: "\uD638\uBC15"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 2
+  - key: Scissor_Normal
+    cost: 200300000000000090010000000000002003000000000000
+    value: 1e0000002d0000004b000000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: b87aaceff4f47a6409475926f002a571, type: 3}
+    itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Scissor_Silver
+    cost: 6009000000000000b0040000000000006009000000000000
+    value: 6e000000a500000013010000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 18f10c7e8000ac64caf2c2f418068325, type: 3}
+    itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC740 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Scissor_Gold
+    cost: 8025000000000000c0120000000000008025000000000000
+    value: d6010000c102000097040000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: a4e8c0cca6ca7064198cd9ba93a94c84, type: 3}
+    itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uAE08 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Shovel_Normal
+    cost: dc05000000000000ee02000000000000dc05000000000000
+    value: 4600000069000000af000000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 972f71a751b61314a9a8bdaaed7e91b2, type: 3}
+    itemName: "\uBAA8\uC885\uC0BD ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Shovel_Silver
+    cost: 9411000000000000ca080000000000009411000000000000
+    value: e6000000590100003f020000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 7c12eada77452f54ebd152f8106edaea, type: 3}
+    itemName: "\uBAA8\uC885\uC0BD ( \uC2E4\uBC84  )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Shovel_Gold
+    cost: 504600000000000028230000000000005046000000000000
+    value: e6000000590100003f020000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 87d722f5f34598f4d9ca12a5b5240a40, type: 3}
+    itemName: "\uBAA8\uC885\uC0BD ( \uAE08  )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Fork_Normal
+    cost: 540b000000000000aa05000000000000540b000000000000
+    value: 96000000e100000077010000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: b7fe9903d876cad4395560f3db69579e, type: 3}
+    itemName: "\uAC08\uD034 ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Fork_Silver
+    cost: fc21000000000000fe10000000000000fc21000000000000
+    value: e6000000590100003f020000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 8d5befb5dcd14dd4986d7e35b2ddfaf0, type: 3}
+    itemName: "\uAC08\uD034 ( \uC2E4\uBC84 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Fork_Gold
+    cost: f087000000000000f843000000000000f087000000000000
+    value: 76070000310b0000a7120000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 337a6724f665efc4e8601e0c56c90713, type: 3}
+    itemName: "\uAC08\uD034 ( \uAE08 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 3
+  - key: Chiken_Normal
+    cost: 3075000000000000983a0000000000003075000000000000
+    value: dc050000ca080000a60e0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 35aa3c947da9d0b45b16d90baa22002a, type: 3}
+    itemName: "\uB2ED ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Chiken_Silver
+    cost: 905f010000000000c8af000000000000905f010000000000
+    value: c0120000201c0000e02e0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: b31b42dab2d67c848817c49d7a2054d1, type: 3}
+    itemName: "\uB2ED ( \uC740 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Chiken_Gold
+    cost: 407e05000000000020bf020000000000407e050000000000
+    value: 904c0000d872000068bf0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 81daef90b4aea7243a66e318deaa8130, type: 3}
+    itemName: "\uB2ED ( \uAE08 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Pig_Normal
+    cost: 78e60000000000003c7300000000000078e6000000000000
+    value: 1c0c00002a120000461e0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 923e3d9e7b211e54c9fa55f6c12249cf, type: 3}
+    itemName: "\uB3FC\uC9C0 ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Pig_Silver
+    cost: 68b3020000000000b45901000000000068b3020000000000
+    value: 8025000040380000c05d0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 2628844a6816187478807f48825b55a4, type: 3}
+    itemName: "\uB3FC\uC9C0 ( \uC740 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Pig_Gold
+    cost: a0cd0a0000000000d066050000000000a0cd0a0000000000
+    value: 9097000058e30000e87a0100
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 2a1eca7fa60d14c4197aa78cc6532822, type: 3}
+    itemName: "\uB3FC\uC9C0 ( \uAE08 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Cow_Normal
+    cost: 3ae800000000000074d001000000000074d0010000000000
+    value: 9c180000ea240000863d0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 2a1eca7fa60d14c4197aa78cc6532822, type: 3}
+    itemName: "\uC18C ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Cow_Silver
+    cost: 5c71050000000000aeb80200000000005c71050000000000
+    value: 004b00008070000080bb0000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 9456d87e3a1f9ae4292470ac36906233, type: 3}
+    itemName: "\uC18C ( \uC77C\uBC18 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Cow_Gold
+    cost: 582d020000000000b8e20a000000000070c5150000000000
+    value: 902d010058c40100e8f10200
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 9456d87e3a1f9ae4292470ac36906233, type: 3}
+    itemName: "\uC18C ( \uAE08 )"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 1
+  - key: Farmer
+    cost: 000000000000000010270000000000001027000000000000
+    value: 00000000e8030000d0070000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: ec56ebf0f2b0448558e0f2894d1fe9ff, type: 3}
+    itemName: "\uB18D\uBD80\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: Cook
+    cost: e093040000000000f049020000000000e093040000000000
+    value: 204e00003075000050c30000
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
+    itemName: "\uC694\uB9AC\uC0AC\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: 'ReapairMan '
+    cost: c027090000000000e093040000000000c027090000000000
+    value: 60ea0000905f0100f0490200
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
+    itemName: "\uC218\uB9AC\uACF5\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: Police
+    cost: 804f120000000000c027090000000000804f120000000000
+    value: c0d4010020bf0200e0930400
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
+    itemName: "\uACBD\uCC30\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: Marine
+    cost: 009f240000000000804f120000000000009f240000000000
+    value: 00a60e00407e0500c0270900
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 422b99d1359614cfdae5ff5e0f341782, type: 3}
+    itemName: "\uD574\uACBD\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: Surgery
+    cost: 003e490000000000009f240000000000003e490000000000
+    value: 0053070080fc0a00804f1200
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: f5a5c29949d134b9295400f89da3bffb, type: 3}
+    itemName: "\uC218\uC220\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: Hotel
+    cost: 007c920000000000003e490000000000007c920000000000
+    value: 00a60e0000f91500009f2400
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: b35433608c993407f801f953f126e0e4, type: 3}
+    itemName: "\uD638\uD154\uC9C1\uC6D0\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
+  - key: Person
+    cost: 00f8240100000000007c92000000000000f8240100000000
+    value: 004c1d0000f22b0000fd3e00
+    itemLevel: 0
+    itemSprite: {fileID: 21300000, guid: 4ff3b2ff18fc84b7a82f99aa761372b2, type: 3}
+    itemName: "\uC77C\uBC18\uC778\uBCF5"
+    itemDescription: 
+    isUnlock: 0
+    isUse: 0
+    type: 0
