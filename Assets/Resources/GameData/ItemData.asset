@@ -297,7 +297,7 @@ MonoBehaviour:
     cost: c027090000000000e093040000000000c027090000000000
     value: 60ea0000905f0100f0490200
     itemLevel: 0
-    itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
+    itemSprite: {fileID: 21300000, guid: 19f6aae2010d7445598c325a27b9b09c, type: 3}
     itemName: "\uC218\uB9AC\uACF5\uBCF5"
     itemDescription: 
     isUnlock: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
     cost: 804f120000000000c027090000000000804f120000000000
     value: c0d4010020bf0200e0930400
     itemLevel: 0
-    itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
+    itemSprite: {fileID: 21300000, guid: 2e23fff2882744ebeaaf8b128b796123, type: 3}
     itemName: "\uACBD\uCC30\uBCF5"
     itemDescription: 
     isUnlock: 0
