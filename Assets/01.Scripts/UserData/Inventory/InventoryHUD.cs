@@ -14,10 +14,12 @@ public class InventoryHUD : UIBase {
     [SerializeField]
     private GameObject itemElement;
 
-    [SerializeField]
-    private GameObject sortObject;
-    
     private List<InventoryItemElement> items = new List<InventoryItemElement>();
+    
+    private void Awake() {
+        CreateItems();
+        gameObject.transform.SetParent(MainCanvas.Instance.gameObject.transform);
+    }
     
     public override void OpenUI(params object[] args) {
         if (args.Length > 0) {
@@ -32,8 +34,6 @@ public class InventoryHUD : UIBase {
     
     private void CreateItems() {
         var objectInterval = itemElement.GetComponent<RectTransform>().sizeDelta.y;
-        var sortObjectInterval = sortObject.GetComponent<RectTransform>().sizeDelta.y;
-        GameObject sortParentObject = null;
         
         ItemData itemData = ItemData.Instance;
         for (int i = 0; i < itemData.Items.Count; i++) {
@@ -48,14 +48,7 @@ public class InventoryHUD : UIBase {
                 ItemType.Tool => elementParents[3],
             };
             
-            if (i % 5 == 0) {
-                var objectPosition = new Vector2();
-                objectPosition.y = ((i % 5) * sortObjectInterval);
-                sortParentObject = Instantiate(sortObject, elementParent.transform);
-                sortParentObject.GetComponent<RectTransform>().localPosition = objectPosition;
-            }
-
-            var newItem = Instantiate(itemElement, sortParentObject.transform).GetComponentSafe<InventoryItemElement>();
+            var newItem = Instantiate(itemElement, elementParent.transform).GetComponentSafe<InventoryItemElement>();
             newItem.Initialize(itemData.Items[i]);
             
             var childCount = elementParent.transform.childCount;
