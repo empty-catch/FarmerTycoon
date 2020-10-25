@@ -28,7 +28,8 @@ public class InventoryHUD : UIBase {
 
         var contextHolder = gameObject.GetComponent<ContextHolder>();
         contextHolder.Context = new InventoryHUDContext();
-        
+
+        gameObject.SetActive(true);
         CreateItems();
     }
     

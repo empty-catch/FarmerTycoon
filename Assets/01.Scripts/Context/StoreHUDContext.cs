@@ -5,30 +5,34 @@ using Slash.Unity.DataBind.Core.Data;
 using UnityEngine;
 
 public class StoreHUDContext : Context {
-    private Property<bool>isCurrentTapClosetProperty = new Property<bool>();
+    private Property<bool> isCurrentTapClosetProperty = new Property<bool>();
+
     public bool IsCurrentTapCloset {
         get => isCurrentTapClosetProperty.Value;
         set => isCurrentTapClosetProperty.Value = value;
-    }    
-    
-    private Property<bool>isCurrentTapAnimalProperty = new Property<bool>();
+    }
+
+    private Property<bool> isCurrentTapAnimalProperty = new Property<bool>();
+
     public bool IsCurrentTapAnimal {
         get => isCurrentTapAnimalProperty.Value;
         set => isCurrentTapAnimalProperty.Value = value;
-    }    
-    
-    private Property<bool>isCurrentTapPlantProperty = new Property<bool>();
+    }
+
+    private Property<bool> isCurrentTapPlantProperty = new Property<bool>();
+
     public bool IsCurrentTapPlant {
         get => isCurrentTapPlantProperty.Value;
         set => isCurrentTapPlantProperty.Value = value;
-    }    
-    
-    private Property<bool>isCurrentTapToolProperty = new Property<bool>();
+    }
+
+    private Property<bool> isCurrentTapToolProperty = new Property<bool>();
+
     public bool IsCurrentTapTool {
         get => isCurrentTapToolProperty.Value;
         set => isCurrentTapToolProperty.Value = value;
     }
-    
+
     public StoreHUDContext() {
         ChangeTap(0);
     }
@@ -40,7 +44,7 @@ public class StoreHUDContext : Context {
         IsCurrentTapPlant = false;
         IsCurrentTapTool = false;
 
-        switch (index){
+        switch (index) {
             case 0:
                 IsCurrentTapCloset = true;
                 break;
@@ -58,8 +62,9 @@ public class StoreHUDContext : Context {
                 break;
         }
     }
-    
+
     public void CloseStore() {
+        UIManager.Instance.OpenUI<MainUI>();
         UIManager.Instance.CloseUI<StoreHUD>();
     }
 }
