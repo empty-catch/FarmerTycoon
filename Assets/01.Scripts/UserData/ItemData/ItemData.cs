@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEditor;
 
@@ -56,6 +57,20 @@ public class ItemData : ScriptableObject {
         if (items.Contains(item) == false) {
             items.Add(item);
             itemDictionary.Add(item.Key, item);
+        }
+    }
+
+    [Button("Reset Object")]
+    public void ResetObject() {
+        for(int i = 0; i < items.Count; i++){
+            if (items[i].Key.Equals("Farmer")) {
+                items[i].IsUnlock = true;
+                items[i].IsUse = true;
+                continue;
+            }
+
+            items[i].IsUnlock = false;
+            items[i].IsUse = false;
         }
     }
 }

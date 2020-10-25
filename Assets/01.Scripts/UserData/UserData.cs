@@ -28,6 +28,7 @@ public class UserData : ScriptableObject {
         }
     }
 
+    [SerializeField]
     private ulong coin;
 
     public ulong Coin {
