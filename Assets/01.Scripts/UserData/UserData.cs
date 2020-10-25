@@ -34,4 +34,22 @@ public class UserData : ScriptableObject {
         get => coin;
         set => coin = value;
     }
+
+    private Item selectCloset;
+    public Item SelectCloset {
+        get => selectCloset;
+        set => selectCloset = value;
+    }
+
+    private Item selectTool;
+    public Item SelectTool {
+        get => selectTool;
+        set => selectTool = value;
+    }
+
+    private Item currentSelectItem;
+    public Item CurrentSelectItem {
+        get => currentSelectItem;
+        set => currentSelectItem = value;
+    }
 }
