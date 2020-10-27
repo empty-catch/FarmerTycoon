@@ -293,7 +293,7 @@ MonoBehaviour:
     isUnlock: 1
     isUse: 0
     type: 0
-  - key: 'ReapairMan '
+  - key: ReapairMan
     cost: c027090000000000e093040000000000c027090000000000
     value: 60ea0000905f0100f0490200
     itemLevel: 0
