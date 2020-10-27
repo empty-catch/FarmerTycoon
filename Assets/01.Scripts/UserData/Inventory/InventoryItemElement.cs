@@ -49,6 +49,11 @@ public class InventoryItemElement : MonoBehaviour {
         }
         else if (itemData.Type.Equals(ItemType.Plant)) {
             if (tempPlantItem != null && tempPlantItem.Equals(itemData)) {
+                if (!PlantHandler.Instance.AddPlant(itemData)) {
+                    "Field full".Log();
+                    return;
+                }
+
                 ClickerSystem.Instance.PlantIncrement += itemData.Value[itemData.ItemLevel];
                 itemData.IsUnlock = false;
                 Destroy(gameObject);
