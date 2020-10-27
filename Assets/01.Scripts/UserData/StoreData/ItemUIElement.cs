@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemUIElement : MonoBehaviour {
     private Item information;
-    
+
     [SerializeField]
     private Image eyeCatch;
 
@@ -14,7 +14,7 @@ public class ItemUIElement : MonoBehaviour {
 
     [SerializeField]
     private Text cost;
-    
+
     public void Initialize(Item itemData) {
         information = itemData;
         eyeCatch.sprite = itemData.ItemSprite;
@@ -22,12 +22,18 @@ public class ItemUIElement : MonoBehaviour {
         cost.text = $"{itemData.Cost[itemData.ItemLevel].ToKorean().ToString()} 원";
     }
 
-    public void BuyItem() {    
+    public void BuyItem() {
         if (UserData.Instance.Coin < information.Cost[information.ItemLevel]) {
             "Not enough coin.".Log();
             return;
         }
 
+        if (ItemData.Instance.TryGetItem(information.Key).IsUnlock) {
+            "Already have item.".Log();
+            return;
+        }
+
+        ClickerSystem.Instance.Coin -= information.Cost[information.ItemLevel];
         ItemData.Instance.TryGetItem(information.Key).IsUnlock = true;
     }
 }

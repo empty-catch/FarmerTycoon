@@ -37,7 +37,7 @@ public class ItemData : ScriptableObject {
     
     private Dictionary<string, Item> itemDictionary = new Dictionary<string, Item>();
 
-    private void Awake() {
+    private void OnEnable() {
         foreach (var item in items) {
             if (itemDictionary.ContainsKey(item.Key) == false) {
                 itemDictionary.Add(item.Key, item);

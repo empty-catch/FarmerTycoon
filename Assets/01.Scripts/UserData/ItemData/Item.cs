@@ -14,8 +14,8 @@ public class Item {
     public ulong[] Cost => cost;
 
     [SerializeField]
-    private int[] value;
-    public int[] Value => value;
+    private uint[] value;
+    public uint[] Value => value;
 
     [SerializeField]
     private int itemLevel;

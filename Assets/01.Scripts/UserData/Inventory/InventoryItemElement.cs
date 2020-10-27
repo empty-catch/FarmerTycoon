@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class InventoryItemElement : MonoBehaviour {
     private Item itemData;
-    
+
     private static Item tempClosetItem;
+
     public static Item TempClosetItem {
         get => tempClosetItem;
         set => tempClosetItem = value;
@@ -19,9 +20,11 @@ public class InventoryItemElement : MonoBehaviour {
         set => tempClosetItem = value;
     }
 
+    private static Item tempPlantItem;
+
     [SerializeField]
     private Image eyeCatch;
-    
+
     public void Initialize(Item item) {
         itemData = item;
         eyeCatch.sprite = item.ItemSprite;
@@ -31,19 +34,28 @@ public class InventoryItemElement : MonoBehaviour {
         if (itemData.Type.Equals(ItemType.Closet)) {
             if (tempClosetItem != null && tempClosetItem.Equals(itemData)) {
                 UserData.Instance.SelectCloset = itemData;
-                return;
             }
-            tempClosetItem = itemData;
+            else {
+                tempClosetItem = itemData;
+            }
         }
         else if (itemData.Type.Equals(ItemType.Tool)) {
             if (tempToolItem != null && tempToolItem.Equals(itemData)) {
                 UserData.Instance.SelectTool = itemData;
-                return;
             }
-            tempToolItem = itemData;
+            else {
+                tempToolItem = itemData;
+            }
         }
-        else {
-            UserData.Instance.CurrentSelectItem = itemData;
+        else if (itemData.Type.Equals(ItemType.Plant)) {
+            if (tempPlantItem != null && tempPlantItem.Equals(itemData)) {
+                ClickerSystem.Instance.PlantIncrement += itemData.Value[itemData.ItemLevel];
+                itemData.IsUnlock = false;
+                Destroy(gameObject);
+            }
+            else {
+                tempPlantItem = itemData;
+            }
         }
     }
 }
