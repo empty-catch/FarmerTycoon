@@ -342,6 +342,7 @@ MonoBehaviour:
   eyeCatch: {fileID: 5448940029179724883}
   name: {fileID: 5448940030049953170}
   cost: {fileID: 5448940029742155202}
+  buttonCommand: {fileID: 7883085330516541678}
 --- !u!1 &5448940030049953168
 GameObject:
   m_ObjectHideFlags: 0
