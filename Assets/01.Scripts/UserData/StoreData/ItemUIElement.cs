@@ -35,5 +35,9 @@ public class ItemUIElement : MonoBehaviour {
 
         ClickerSystem.Instance.Coin -= information.Cost[information.ItemLevel];
         ItemData.Instance.TryGetItem(information.Key).IsUnlock = true;
+
+        if (information.Type == ItemType.Animal) {
+            ClickerSystem.Instance.AnimalIncrement += information.Value[information.ItemLevel];
+        }
     }
 }
