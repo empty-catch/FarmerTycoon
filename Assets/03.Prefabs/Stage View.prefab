@@ -1145,18 +1145,24 @@ MonoBehaviour:
   - title: "\uACBD\uC0C1\uB3C4"
     cost: 0
     logo: {fileID: 21300000, guid: fd3668a1f5e694543aac5a9bded138f7, type: 3}
+    bgm: {fileID: 8300000, guid: 86e57807b4998294bac72751efb8543d, type: 3}
   - title: "\uAC15\uC6D0\uB3C4"
     cost: 1200000000
     logo: {fileID: 21300000, guid: 735ae38b8f892704c9bad8f0096055fc, type: 3}
+    bgm: {fileID: 8300000, guid: d92d6827398cfa44c86904ded7cefdf7, type: 3}
   - title: "\uACBD\uAE30\uB3C4"
     cost: 2400000000
     logo: {fileID: 21300000, guid: 110a395b9c8454d4f94b9d484a6d5bd9, type: 3}
+    bgm: {fileID: 8300000, guid: f9f403cd72b3e7147a0b5c04b56175cb, type: 3}
   - title: "\uC81C\uC8FC\uB3C4"
     cost: 4800000000
     logo: {fileID: 21300000, guid: fcdbe5181ae6a6c4e81314d6ac2580af, type: 3}
+    bgm: {fileID: 8300000, guid: f1da609f9a03eba49aa16742c7eb063a, type: 3}
   - title: "\uC11C\uC6B8"
     cost: 8000000000
     logo: {fileID: 21300000, guid: e7db3bd677db872469b414165994f89d, type: 3}
+    bgm: {fileID: 8300000, guid: badc5195b9711b3498621fe223bcd77d, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &2814188940672960773
 GameObject:
   m_ObjectHideFlags: 0

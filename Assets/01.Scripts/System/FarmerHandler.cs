@@ -13,7 +13,6 @@ public class FarmerHandler : SingletonObject<FarmerHandler> {
             ? $"Costumes/{costume.ItemSprite.name}"
             : $"CharactersWithTools/{trimmedCostume}/{trimmedCostume}{tool.ItemSprite.name}";
         
-        path.Log();
         var sprite = Resources.Load<Sprite>(path);
         image.sprite = sprite;
     }

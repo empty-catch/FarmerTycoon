@@ -5,6 +5,9 @@ public class StageUI : UIBase {
     [SerializeField]
     private StageData[] datas;
 
+    [SerializeField]
+    private AudioSource audioSource;
+
     private static StageContext StageContext => MasterContext.Instance.StageContext;
 
     public override void OpenUI(params object[] args) {
@@ -25,6 +28,8 @@ public class StageUI : UIBase {
                 StageContext.Logo = data.logo;
                 StageContext.ResetButtonsColor();
                 context.Color = new Color32(237, 225, 86, 255);
+                audioSource.clip = data.bgm;
+                audioSource.Play();
             };
         }
 
@@ -38,5 +43,6 @@ public class StageUI : UIBase {
         public string title;
         public ulong cost;
         public Sprite logo;
+        public AudioClip bgm;
     }
 }
