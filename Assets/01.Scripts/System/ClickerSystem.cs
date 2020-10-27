@@ -16,6 +16,7 @@ public class ClickerSystem : SingletonObject<ClickerSystem> {
         set {
             costumeIncrement = value;
             CoinContext.AutoIncrement = AutoIncrement;
+            Coin = Coin;
         }
     }
 
@@ -32,6 +33,7 @@ public class ClickerSystem : SingletonObject<ClickerSystem> {
         set {
             animalIncrement = value;
             CoinContext.AutoIncrement = AutoIncrement;
+            Coin = Coin;
         }
     }
 

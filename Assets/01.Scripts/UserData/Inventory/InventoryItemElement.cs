@@ -34,6 +34,7 @@ public class InventoryItemElement : MonoBehaviour {
         if (itemData.Type.Equals(ItemType.Closet)) {
             if (tempClosetItem != null && tempClosetItem.Equals(itemData)) {
                 UserData.Instance.SelectCloset = itemData;
+                ClickerSystem.Instance.CostumeIncrement = itemData.Value[itemData.ItemLevel];
             }
             else {
                 tempClosetItem = itemData;
