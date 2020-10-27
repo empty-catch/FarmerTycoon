@@ -33,9 +33,15 @@ public class StoreHUD : UIBase {
         gameObject.SetActive(true);
     }
 
+    public void RefreshList() {
+        for (int i = 0; i < items.Count; i++) {
+            Destroy(items[i].gameObject);
+        }
+        items.Clear();
+        CreateItems();
+    }
+    
     private void CreateItems() {
-        var objectInterval = itemElement.GetComponent<RectTransform>().sizeDelta.y;
-
         ItemData itemData = ItemData.Instance;
         for (int i = 0; i < itemData.Items.Count; i++) {
             if (itemData.Items[i].IsUnlock) {
@@ -50,11 +56,7 @@ public class StoreHUD : UIBase {
             };
             
             var newItem = Instantiate(itemElement, elementParent.transform).GetComponentSafe<ItemUIElement>();
-            newItem.Initialize(itemData.Items[i]);
-            
-            var childCount = elementParent.transform.childCount; 
-            
-            newItem.gameObject.GetComponent<RectTransform>().localPosition = new Vector2(0, pivot.transform.localPosition.y + (-childCount * objectInterval));
+            newItem.Initialize(this, itemData.Items[i]);
             
             items.Add(newItem);
         }

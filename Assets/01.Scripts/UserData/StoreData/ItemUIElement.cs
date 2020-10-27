@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Slash.Unity.DataBind.Core.Data;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -14,8 +15,14 @@ public class ItemUIElement : MonoBehaviour {
 
     [SerializeField]
     private Text cost;
+
+    [SerializeField]
+    private Button buttonCommand;
     
-    public void Initialize(Item itemData) {
+    private UIBase parent;
+    
+    public void Initialize(UIBase parent, Item itemData) {
+        this.parent = parent;
         information = itemData;
         eyeCatch.sprite = itemData.ItemSprite;
         name.text = itemData.ItemName;
@@ -28,6 +35,10 @@ public class ItemUIElement : MonoBehaviour {
             return;
         }
 
+        var newParent = parent as StoreHUD;
+        information.Key.Log();
         ItemData.Instance.TryGetItem(information.Key).IsUnlock = true;
+        newParent.RefreshList();
+
     }
 }
