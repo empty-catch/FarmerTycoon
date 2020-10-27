@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ItemHandler : SingletonObject<ItemHandler> {
     [SerializeField]
-    private Image[] images;
+    protected Image[] images;
 
     public virtual bool AddItem(Item item, Sprite sprite) {
         var plantImage = images.FirstOrDefault(image => !image.gameObject.activeSelf);

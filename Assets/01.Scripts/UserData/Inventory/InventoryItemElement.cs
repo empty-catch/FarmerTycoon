@@ -35,6 +35,7 @@ public class InventoryItemElement : MonoBehaviour {
             if (tempClosetItem != null && tempClosetItem.Equals(itemData)) {
                 UserData.Instance.SelectCloset = itemData;
                 ClickerSystem.Instance.CostumeIncrement = itemData.Value[itemData.ItemLevel];
+                FarmerHandler.Instance.UpdateItem();
             }
             else {
                 tempClosetItem = itemData;
@@ -43,6 +44,8 @@ public class InventoryItemElement : MonoBehaviour {
         else if (itemData.Type.Equals(ItemType.Tool)) {
             if (tempToolItem != null && tempToolItem.Equals(itemData)) {
                 UserData.Instance.SelectTool = itemData;
+                ClickerSystem.Instance.ToolIncrement = itemData.Value[itemData.ItemLevel];
+                FarmerHandler.Instance.UpdateItem();
             }
             else {
                 tempToolItem = itemData;
