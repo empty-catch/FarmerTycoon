@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cdb5a76a104353be649194f1349402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantImages:
+  images:
   - {fileID: 1325138251}
   - {fileID: 1037310043}
   - {fileID: 494379032}

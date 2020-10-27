@@ -50,7 +50,8 @@ public class InventoryItemElement : MonoBehaviour {
         }
         else if (itemData.Type.Equals(ItemType.Plant)) {
             if (tempPlantItem != null && tempPlantItem.Equals(itemData)) {
-                if (!PlantHandler.Instance.AddPlant(itemData)) {
+                var sprite = Resources.Load<Sprite>($"Planted/Planted{itemData.Key}");
+                if (!PlantHandler.Instance.AddItem(itemData, sprite)) {
                     "Field full".Log();
                     return;
                 }
