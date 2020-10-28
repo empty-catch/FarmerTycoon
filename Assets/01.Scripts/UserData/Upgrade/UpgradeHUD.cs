@@ -49,10 +49,6 @@ public class UpgradeHUD : UIBase {
     private void CreateItems() {
         ItemData itemData = ItemData.Instance;
         for (int i = 0; i < itemData.Items.Count; i++) {
-            if (itemData.Items[i].IsUnlock) {
-                continue;
-            }
-
             var elementParent = itemData.Items[i].Type switch {
                 ItemType.Closet => elementParents[0],
                 ItemType.Animal => elementParents[1],

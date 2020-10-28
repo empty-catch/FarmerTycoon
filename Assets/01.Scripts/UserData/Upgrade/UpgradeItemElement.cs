@@ -39,6 +39,9 @@ public class UpgradeItemElement : MonoBehaviour {
                 CurrentSelectElement.ChangeColor(Color.yellow);
             }
         });
+        
+        currentSelectElement?.ChangeColor(Color.white);
+        currentSelectElement = null;
     }
 
     public void ChangeColor(Color color) {

@@ -19,15 +19,18 @@ public class InventoryItemElement : MonoBehaviour {
     [SerializeField]
     private Image background;
 
-    private static InventoryItemElement currentSelect;
+    private static InventoryItemElement currentSelectElement;
     public static InventoryItemElement CurrentSelect {
-        get => currentSelect;
-        set => currentSelect = value;
+        get => currentSelectElement;
+        set => currentSelectElement = value;
     }
     
     public void Initialize(Item item) {
         itemData = item;
         eyeCatch.sprite = item.ItemSprite;
+                
+        currentSelectElement?.ChangeColor(Color.white);
+        currentSelectElement = null;
     }
 
     public void Select() {
@@ -35,28 +38,28 @@ public class InventoryItemElement : MonoBehaviour {
             if (tempClosetItem != null && tempClosetItem.Equals(itemData)) {
                 itemData.UseAsCloset();
                 tempClosetItem = null;
-                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect?.ChangeColor(Color.white);
                 CurrentSelect = null;
             }
             else {
                 tempClosetItem = itemData;
-                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect?.ChangeColor(Color.white);
                 CurrentSelect = this;
-                CurrentSelect.SetColor(Color.yellow);
+                CurrentSelect.ChangeColor(Color.yellow);
             }
         }
         else if (itemData.Type.Equals(ItemType.Tool)) {
             if (tempToolItem != null && tempToolItem.Equals(itemData)) {
                 itemData.UseAsTool();
                 tempToolItem = null;
-                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect?.ChangeColor(Color.white);
                 CurrentSelect = null;
             }
             else {
                 tempToolItem = itemData;
-                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect?.ChangeColor(Color.white);
                 CurrentSelect = this;
-                CurrentSelect.SetColor(Color.yellow);
+                CurrentSelect.ChangeColor(Color.yellow);
             }
         }
         else if (itemData.Type.Equals(ItemType.Plant)) {
@@ -76,19 +79,19 @@ public class InventoryItemElement : MonoBehaviour {
                     UIManager.Instance.CloseUI<PlantSelectUI>();
                 };
                 
-                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect?.ChangeColor(Color.white);
                 CurrentSelect = null;
             }
             else {
                 tempPlantItem = itemData;
-                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect?.ChangeColor(Color.white);
                 CurrentSelect = this;
-                CurrentSelect.SetColor(Color.yellow);
+                CurrentSelect.ChangeColor(Color.yellow);
             }
         }
     }
 
-    public void SetColor(Color color) {
+    public void ChangeColor(Color color) {
         background.color = color;
     }
 }
