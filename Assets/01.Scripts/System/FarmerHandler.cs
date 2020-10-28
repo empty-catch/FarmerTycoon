@@ -14,7 +14,7 @@ public class FarmerHandler : SingletonObject<FarmerHandler> {
             : costume.ItemSprite.name.Replace("Costume", string.Empty);
 
         var path = tool.Key == string.Empty
-            ? $"Costumes/{costume.ItemSprite.name}"
+            ? $"Costumes/Costume{trimmedCostume}"
             : $"CharactersWithTools/{trimmedCostume}/{trimmedCostume}{tool.ItemSprite.name}";
 
         var sprite = Resources.Load<Sprite>(path);
