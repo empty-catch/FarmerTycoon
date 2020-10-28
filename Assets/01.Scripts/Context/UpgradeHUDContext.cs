@@ -101,6 +101,8 @@ public class UpgradeHUDContext : Context
 
         $"{selectItem.Key} level up success!!".Log();
         
+        UpgradeItemElement.CurrentSelectElement.ChangeColor(Color.white);
+
         selectItem.LevelUP();
         selectItem = null;
         BeforeText = "선택된 값\n없음";
