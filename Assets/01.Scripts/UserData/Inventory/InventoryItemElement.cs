@@ -23,9 +23,7 @@ public class InventoryItemElement : MonoBehaviour {
     public void Select() {
         if (itemData.Type.Equals(ItemType.Closet)) {
             if (tempClosetItem != null && tempClosetItem.Equals(itemData)) {
-                UserData.Instance.SelectCloset = itemData;
-                ClickerSystem.Instance.CostumeIncrement = itemData.Value[itemData.ItemLevel];
-                FarmerHandler.Instance.UpdateItem();
+                itemData.UseAsCloset();
                 tempClosetItem = null;
             }
             else {
@@ -34,9 +32,7 @@ public class InventoryItemElement : MonoBehaviour {
         }
         else if (itemData.Type.Equals(ItemType.Tool)) {
             if (tempToolItem != null && tempToolItem.Equals(itemData)) {
-                UserData.Instance.SelectTool = itemData;
-                ClickerSystem.Instance.ToolIncrement = itemData.Value[itemData.ItemLevel];
-                FarmerHandler.Instance.UpdateItem();
+                itemData.UseAsTool();
                 tempToolItem = null;
             }
             else {
@@ -45,32 +41,23 @@ public class InventoryItemElement : MonoBehaviour {
         }
         else if (itemData.Type.Equals(ItemType.Plant)) {
             if (tempPlantItem != null && tempPlantItem.Equals(itemData)) {
-                var sprite = Resources.Load<Sprite>($"Planted/Planted{itemData.Key}");
-                if (!PlantHandler.Instance.AddItem(itemData, sprite)) {
+                if (PlantHandler.Instance.IsFull) {
                     "Field full".Log();
                     return;
                 }
 
-                ClickerSystem.Instance.PlantIncrement += itemData.Value[itemData.ItemLevel];
-                itemData.IsUnlock = false;
-                tempPlantItem = null;
-                Destroy(gameObject);
+                UIManager.Instance.OpenUI<PlantSelectUI>();
+                UIManager.Instance.OpenUI<MainUI>();
+                UIManager.Instance.CloseUI<InventoryHUD>();
+
+                ((PlantSelectUI)PlantSelectUI.Instance).Selected += index => {
+                    itemData.UseAsPlant(index);
+                    tempPlantItem = null;
+                    UIManager.Instance.CloseUI<PlantSelectUI>();
+                };
             }
             else {
                 tempPlantItem = itemData;
-            }
-        }
-        else if (itemData.Type.Equals(ItemType.Animal)) {
-            if (tempAnimal != null && tempAnimal.Equals(itemData)) {
-                /*
-                 * 하셔야 하는 작업 있으시면 하시면 댐다
-                 */
-                itemData.IsUnlock = false;
-                tempAnimal = null;
-                Destroy(gameObject);
-            }
-            else {
-                tempAnimal = itemData;
             }
         }
     }

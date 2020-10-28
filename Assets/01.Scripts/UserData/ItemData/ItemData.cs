@@ -8,9 +8,10 @@ using UnityEditor;
 
 public class ItemData : ScriptableObject {
     private static ItemData instance;
+
     public static ItemData Instance {
         get {
-            if (instance is null) { 
+            if (instance is null) {
                 var itemData = Resources.Load<ItemData>("GameData/ItemData");
                 if (itemData is null) {
                     var path = "Assets/Resources/GameData";
@@ -30,11 +31,12 @@ public class ItemData : ScriptableObject {
             return instance;
         }
     }
-    
+
     [SerializeField]
     private List<Item> items = new List<Item>();
+
     public List<Item> Items => items;
-    
+
     private Dictionary<string, Item> itemDictionary = new Dictionary<string, Item>();
 
     private void OnEnable() {
@@ -42,9 +44,9 @@ public class ItemData : ScriptableObject {
             if (itemDictionary.ContainsKey(item.Key) == false) {
                 itemDictionary.Add(item.Key, item);
             }
-        }        
+        }
     }
-    
+
     public Item TryGetItem(string key) {
         if (itemDictionary.ContainsKey(key) == false) {
             throw new ArgumentException("Not found Item key.");
@@ -62,7 +64,7 @@ public class ItemData : ScriptableObject {
 
     [Button("Reset Object")]
     public void ResetObject() {
-        for(int i = 0; i < items.Count; i++){
+        for (int i = 0; i < items.Count; i++) {
             if (items[i].Key.Equals("Farmer")) {
                 items[i].IsUnlock = true;
                 items[i].IsUse = true;

@@ -100,7 +100,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b87aaceff4f47a6409475926f002a571, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 3
   - key: Scissor_Silver
@@ -110,7 +110,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 18f10c7e8000ac64caf2c2f418068325, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC740 )"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 3
   - key: Scissor_Gold
@@ -120,7 +120,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: a4e8c0cca6ca7064198cd9ba93a94c84, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uAE08 )"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 3
   - key: Shovel_Normal
@@ -130,7 +130,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 972f71a751b61314a9a8bdaaed7e91b2, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 3
   - key: Shovel_Silver
@@ -140,7 +140,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 7c12eada77452f54ebd152f8106edaea, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uC2E4\uBC84  )"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 3
   - key: Shovel_Gold
@@ -150,7 +150,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 87d722f5f34598f4d9ca12a5b5240a40, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uAE08  )"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 3
   - key: Fork_Normal
@@ -290,7 +290,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
     itemName: "\uC694\uB9AC\uC0AC\uBCF5"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 0
   - key: ReapairMan
@@ -300,7 +300,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 19f6aae2010d7445598c325a27b9b09c, type: 3}
     itemName: "\uC218\uB9AC\uACF5\uBCF5"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 0
   - key: Police
@@ -310,7 +310,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 2e23fff2882744ebeaaf8b128b796123, type: 3}
     itemName: "\uACBD\uCC30\uBCF5"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 0
   - key: Marine
@@ -320,7 +320,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 422b99d1359614cfdae5ff5e0f341782, type: 3}
     itemName: "\uD574\uACBD\uBCF5"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 0
   - key: Surgery
@@ -330,7 +330,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: f5a5c29949d134b9295400f89da3bffb, type: 3}
     itemName: "\uC218\uC220\uBCF5"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 0
   - key: Hotel
@@ -340,7 +340,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b35433608c993407f801f953f126e0e4, type: 3}
     itemName: "\uD638\uD154\uC9C1\uC6D0\uBCF5"
     itemDescription: 
-    isUnlock: 1
+    isUnlock: 0
     isUse: 0
     type: 0
   - key: Person

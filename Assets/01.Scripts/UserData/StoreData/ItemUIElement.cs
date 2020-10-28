@@ -48,7 +48,7 @@ public class ItemUIElement : MonoBehaviour {
 
         if (information.Type == ItemType.Animal &&
             AnimalHandler.Instance.AddItem(information, information.ItemSprite)) {
-            ClickerSystem.Instance.AnimalIncrement += information.Value[information.ItemLevel];
+            information.UseAsAnimal();
         }
     }
 }
