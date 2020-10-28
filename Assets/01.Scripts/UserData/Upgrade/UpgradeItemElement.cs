@@ -12,11 +12,20 @@ public class UpgradeItemElement : MonoBehaviour {
 
     [SerializeField]
     private Button buttonCommand;
+
+    [SerializeField]
+    private Image background;
+
+    private static UpgradeItemElement currentSelectElement;
+    public static UpgradeItemElement CurrentSelectElement {
+        get => currentSelectElement;
+        set => currentSelectElement = value;
+    }
     
     private UIBase parent;
 
     public void Initialize(UIBase parent, Item itemData) {
-        this.parent = parent;
+         this.parent = parent;
         information = itemData;
         eyeCatch.sprite = itemData.ItemSprite;
 
@@ -24,12 +33,16 @@ public class UpgradeItemElement : MonoBehaviour {
             var upgradeHUD = parent as UpgradeHUD;
      
             if (upgradeHUD.ContextHolder?.Context is UpgradeHUDContext context) {
+                CurrentSelectElement?.ChangeColor(Color.white);
                 context?.SelectItem(information);
+                CurrentSelectElement = this;
+                CurrentSelectElement.ChangeColor(Color.yellow);
             }
         });
     }
 
-    public void Upgrade() {
-        
+    public void ChangeColor(Color color) {
+        background.color = color;
     }
+
 }
