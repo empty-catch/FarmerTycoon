@@ -64,4 +64,20 @@ public class UserData : ScriptableObject {
     private void Log() {
         Debug.Log(selectCloset.ItemSprite);
     }
+
+    [Button("Reset UserData")]
+    private void ResetUserData() {
+        coin = 0;
+        currentSelectItem = null;
+        selectCloset = null;
+        selectTool = null;
+
+        for (int i = 0; i < SelectPlants.Length; i++) {
+            SelectPlants[i] = null;
+        }
+        
+        
+        
+        
+    }
 }
