@@ -17,4 +17,9 @@ public class MainContext : Context {
         UIManager.Instance.OpenUI<InventoryHUD>();
         UIManager.Instance.CloseUI<MainUI>();
     }
+
+    public void OpenUpgrade() {
+        UIManager.Instance.OpenUI<UpgradeHUD>();
+        UIManager.Instance.CloseUI<MainUI>();
+    }
 }
