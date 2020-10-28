@@ -20,7 +20,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: ce2132d527e98b9418ef24484e7399a8, type: 3}
     itemName: "\uBC84\uC12F"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: Carrot
@@ -30,7 +30,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: aafc90d3b2c7d6e4cbbb9d21832eeeb4, type: 3}
     itemName: "\uB2F9\uADFC"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: Onion
@@ -40,7 +40,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 663701ae725690b49a62734a3cf13e54, type: 3}
     itemName: "\uD30C"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: Corn
@@ -50,14 +50,14 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: a24083ced5240f74281d0059ed8b4acd, type: 3}
     itemName: "\uC625\uC218\uC218"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: Rice
     cost: 100e0000000000000807000000000000100e000000000000
     value: 86000000c90000004f010000
     itemLevel: 0
-    itemSprite: {fileID: 0}
+    itemSprite: {fileID: 21300000, guid: e34ce8ce4a4030846bfdedb2f3a2ac5c, type: 3}
     itemName: "\uBCBC"
     itemDescription: 
     isUnlock: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: d818604b0fbeab241ad2c340df5d9912, type: 3}
     itemName: "\uBB34"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: Cabbage
@@ -80,7 +80,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 405a7601f2aa3144dbf762338ec230cd, type: 3}
     itemName: "\uBC30\uCD94"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: Pumpkin
@@ -90,7 +90,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 493b491932ec1b64d86dcbc60ca9ae31, type: 3}
     itemName: "\uD638\uBC15"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 2
   - key: NormalScissor
@@ -100,7 +100,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b87aaceff4f47a6409475926f002a571, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Scissor_Silver
@@ -110,7 +110,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 18f10c7e8000ac64caf2c2f418068325, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC740 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Scissor_Gold
@@ -120,7 +120,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: a4e8c0cca6ca7064198cd9ba93a94c84, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uAE08 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Shovel_Normal
@@ -130,7 +130,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 972f71a751b61314a9a8bdaaed7e91b2, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Shovel_Silver
@@ -140,7 +140,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 7c12eada77452f54ebd152f8106edaea, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uC2E4\uBC84  )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Shovel_Gold
@@ -150,7 +150,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 87d722f5f34598f4d9ca12a5b5240a40, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uAE08  )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Fork_Normal
@@ -160,7 +160,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b7fe9903d876cad4395560f3db69579e, type: 3}
     itemName: "\uAC08\uD034 ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Fork_Silver
@@ -170,7 +170,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 8d5befb5dcd14dd4986d7e35b2ddfaf0, type: 3}
     itemName: "\uAC08\uD034 ( \uC2E4\uBC84 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Fork_Gold
@@ -180,7 +180,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 337a6724f665efc4e8601e0c56c90713, type: 3}
     itemName: "\uAC08\uD034 ( \uAE08 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Chiken_Normal
@@ -190,7 +190,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 35aa3c947da9d0b45b16d90baa22002a, type: 3}
     itemName: "\uB2ED ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Chiken_Silver
@@ -200,7 +200,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b31b42dab2d67c848817c49d7a2054d1, type: 3}
     itemName: "\uB2ED ( \uC740 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Chiken_Gold
@@ -210,7 +210,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 81daef90b4aea7243a66e318deaa8130, type: 3}
     itemName: "\uB2ED ( \uAE08 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Pig_Normal
@@ -220,7 +220,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 923e3d9e7b211e54c9fa55f6c12249cf, type: 3}
     itemName: "\uB3FC\uC9C0 ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Pig_Silver
@@ -230,7 +230,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 2628844a6816187478807f48825b55a4, type: 3}
     itemName: "\uB3FC\uC9C0 ( \uC740 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Pig_Gold
@@ -240,7 +240,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 2a1eca7fa60d14c4197aa78cc6532822, type: 3}
     itemName: "\uB3FC\uC9C0 ( \uAE08 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Cow_Normal
@@ -250,7 +250,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 2a1eca7fa60d14c4197aa78cc6532822, type: 3}
     itemName: "\uC18C ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Cow_Silver
@@ -260,7 +260,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 9456d87e3a1f9ae4292470ac36906233, type: 3}
     itemName: "\uC18C ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Cow_Gold
@@ -270,7 +270,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 9456d87e3a1f9ae4292470ac36906233, type: 3}
     itemName: "\uC18C ( \uAE08 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Farmer
@@ -290,7 +290,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
     itemName: "\uC694\uB9AC\uC0AC\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: ReapairMan
@@ -300,7 +300,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 19f6aae2010d7445598c325a27b9b09c, type: 3}
     itemName: "\uC218\uB9AC\uACF5\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: Police
@@ -310,7 +310,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 2e23fff2882744ebeaaf8b128b796123, type: 3}
     itemName: "\uACBD\uCC30\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: Marine
@@ -320,7 +320,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 422b99d1359614cfdae5ff5e0f341782, type: 3}
     itemName: "\uD574\uACBD\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: Surgery
@@ -330,7 +330,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: f5a5c29949d134b9295400f89da3bffb, type: 3}
     itemName: "\uC218\uC220\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: Hotel
@@ -340,16 +340,16 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b35433608c993407f801f953f126e0e4, type: 3}
     itemName: "\uD638\uD154\uC9C1\uC6D0\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: Person
     cost: 00f8240100000000007c92000000000000f8240100000000
     value: 004c1d0000f22b0000fd3e00
     itemLevel: 0
-    itemSprite: {fileID: 21300000, guid: 4ff3b2ff18fc84b7a82f99aa761372b2, type: 3}
+    itemSprite: {fileID: 21300000, guid: 869855cb15b2fcc4ea2d25c8e2923ee4, type: 3}
     itemName: "\uC77C\uBC18\uC778\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
