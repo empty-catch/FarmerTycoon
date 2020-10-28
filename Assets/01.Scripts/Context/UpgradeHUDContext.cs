@@ -96,7 +96,8 @@ public class UpgradeHUDContext : Context
 
     public void Upgrade() {
         if (selectItem == null) {
-            throw new NullReferenceException("Not selected item.");
+            "The selected item is at the maximum level or no item is selected.".Log();
+            return;
         }
 
         $"{selectItem.Key} level up success!!".Log();
