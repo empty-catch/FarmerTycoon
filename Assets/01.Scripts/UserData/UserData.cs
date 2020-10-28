@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using NaughtyAttributes;
 using UnityEditor;
 using UnityEngine;
@@ -75,5 +76,9 @@ public class UserData : ScriptableObject {
         for (int i = 0; i < SelectPlants.Length; i++) {
             SelectPlants[i] = null;
         }
+    }
+
+    private void OnEnable() {
+        ResetUserData();
     }
 }

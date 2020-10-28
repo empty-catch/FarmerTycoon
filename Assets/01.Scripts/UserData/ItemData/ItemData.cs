@@ -40,6 +40,7 @@ public class ItemData : ScriptableObject {
     private Dictionary<string, Item> itemDictionary = new Dictionary<string, Item>();
 
     private void OnEnable() {
+        ResetObject();
         foreach (var item in items) {
             if (itemDictionary.ContainsKey(item.Key) == false) {
                 itemDictionary.Add(item.Key, item);
@@ -64,12 +65,6 @@ public class ItemData : ScriptableObject {
 
     [Button("Reset Object")]
     public void ResetObject() {
-        UserData.Instance.SelectCloset = null;
-        UserData.Instance.SelectTool = null;
-        for (var i = 0; i < UserData.Instance.SelectPlants.Length; i++) {
-            UserData.Instance.SelectPlants[0] = null;
-        }
-
         for (int i = 0; i < items.Count; i++) {
             items[i].ItemLevel = 0;
             if (items[i].Key.Equals("Farmer")) {
