@@ -75,9 +75,5 @@ public class UserData : ScriptableObject {
         for (int i = 0; i < SelectPlants.Length; i++) {
             SelectPlants[i] = null;
         }
-        
-        
-        
-        
     }
 }
