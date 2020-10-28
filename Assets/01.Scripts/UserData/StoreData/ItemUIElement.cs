@@ -55,9 +55,11 @@ public class ItemUIElement : MonoBehaviour {
         }
 
         if (tempItem == null || tempItem != information) {
+            CurrentSelectElement?.ChangeColor(Color.white);
             tempItem = information;
             CurrentSelectElement = this;
             CurrentSelectElement.ChangeColor(Color.yellow);
+            return;
         }
 
         ClickerSystem.Instance.Coin -= information.Cost[information.ItemLevel];
@@ -66,7 +68,7 @@ public class ItemUIElement : MonoBehaviour {
         ItemData.Instance.TryGetItem(information.Key).IsUnlock = true;
         newParent.RefreshList();
 
-        CurrentSelectElement.ChangeColor(Color.white);
+        CurrentSelectElement?.ChangeColor(Color.white);
         CurrentSelectElement = null;
 
         tempItem = null;
