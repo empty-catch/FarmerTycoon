@@ -84,4 +84,8 @@ public class Item {
     public void UseAsAnimal() {
         ClickerSystem.Instance.AnimalIncrement += Value[ItemLevel];
     }
+    
+    public void LevelUP() {
+        itemLevel++;
+    }
 }
