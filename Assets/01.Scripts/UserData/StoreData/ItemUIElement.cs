@@ -53,6 +53,7 @@ public class ItemUIElement : MonoBehaviour {
 
         if (tempItem == null || tempItem != information) {
             tempItem = information;
+            CurrentSelectElement = this;
             CurrentSelectElement.ChangeColor(Color.yellow);
         }
 
