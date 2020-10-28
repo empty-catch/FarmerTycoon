@@ -64,8 +64,14 @@ public class ItemData : ScriptableObject {
 
     [Button("Reset Object")]
     public void ResetObject() {
+        UserData.Instance.SelectTool = null;
+        for (var i = 0; i < UserData.Instance.SelectPlants.Length; i++) {
+            UserData.Instance.SelectPlants[0] = null;
+        }
+
         for (int i = 0; i < items.Count; i++) {
             if (items[i].Key.Equals("Farmer")) {
+                UserData.Instance.SelectCloset = items[i];
                 items[i].IsUnlock = true;
                 items[i].IsUse = true;
                 continue;

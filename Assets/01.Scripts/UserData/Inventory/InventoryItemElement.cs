@@ -50,7 +50,7 @@ public class InventoryItemElement : MonoBehaviour {
                 UIManager.Instance.OpenUI<MainUI>();
                 UIManager.Instance.CloseUI<InventoryHUD>();
 
-                ((PlantSelectUI)PlantSelectUI.Instance).Selected += index => {
+                SingletonObject<PlantSelectUI>.Instance.Selected += index => {
                     itemData.UseAsPlant(index);
                     tempPlantItem = null;
                     UIManager.Instance.CloseUI<PlantSelectUI>();

@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using NaughtyAttributes;
 using UnityEditor;
 using UnityEngine;
 
@@ -57,5 +58,10 @@ public class UserData : ScriptableObject {
     public Item CurrentSelectItem {
         get => currentSelectItem;
         set => currentSelectItem = value;
+    }
+
+    [Button("Log")]
+    private void Log() {
+        Debug.Log(selectCloset.ItemSprite);
     }
 }
