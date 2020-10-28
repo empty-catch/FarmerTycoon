@@ -13,14 +13,15 @@ public class UpgradeHUD : UIBase {
 
     [SerializeField]
     private GameObject itemElement;
-
-    [SerializeField]
-    private Text upgradeDescription;
     
     private List<UpgradeItemElement> items = new List<UpgradeItemElement>();
 
+    private ContextHolder contextHolder;
+    public ContextHolder ContextHolder => contextHolder;
+
     private void Awake() {
         CreateItems();
+        OpenUI();
         gameObject.transform.SetParent(MainCanvas.Instance.gameObject.transform);
     }
 
@@ -32,6 +33,8 @@ public class UpgradeHUD : UIBase {
         var contextHolder = gameObject.GetComponentSafe<ContextHolder>();
         contextHolder.Context = new UpgradeHUDContext();
 
+        this.contextHolder = contextHolder; 
+        
         gameObject.SetActive(true);
     }
 
@@ -62,10 +65,6 @@ public class UpgradeHUD : UIBase {
 
             items.Add(newItem);
         }
-    }
-
-    public void ChangeDescription(string description) {
-        upgradeDescription.text = description;
     }
     
     public override void CloseUI(params object[] args) {

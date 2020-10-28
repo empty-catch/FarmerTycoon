@@ -38,7 +38,6 @@ public class StoreHUDContext : Context {
     }
 
     public void ChangeTap(Single index) {
-        // TODO : 이거 리스트에 담고 해도 안되는데 좀 개극혐이라 추후 수정 
         IsCurrentTapCloset = false;
         IsCurrentTapAnimal = false;
         IsCurrentTapPlant = false;
