@@ -42,7 +42,7 @@ public class ItemUIElement : MonoBehaviour {
 
         ClickerSystem.Instance.Coin -= information.Cost[information.ItemLevel];
         var newParent = parent as StoreHUD;
-        information.Key.Log();
+        
         ItemData.Instance.TryGetItem(information.Key).IsUnlock = true;
         newParent.RefreshList();
 
