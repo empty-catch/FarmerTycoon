@@ -8,7 +8,12 @@ public class FarmerHandler : SingletonObject<FarmerHandler> {
     public void UpdateItem() {
         var tool = UserData.Instance.SelectTool;
         var costume = UserData.Instance.SelectCloset;
-        var trimmedCostume = costume.ItemSprite.name.Replace("Costume", string.Empty);
+        var trimmedCostume = "";
+        
+        if (trimmedCostume.Contains("Costume")) {
+            trimmedCostume = costume.ItemSprite.name.Replace("Costume", string.Empty);
+        }
+        
         var path = tool is null
             ? $"Costumes/{costume.ItemSprite.name}"
             : $"CharactersWithTools/{trimmedCostume}/{trimmedCostume}{tool.ItemSprite.name}";
