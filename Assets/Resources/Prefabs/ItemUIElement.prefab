@@ -343,6 +343,7 @@ MonoBehaviour:
   name: {fileID: 5448940030049953170}
   cost: {fileID: 5448940029742155202}
   buttonCommand: {fileID: 7883085330516541678}
+  background: {fileID: 8114626936749789660}
 --- !u!1 &5448940030049953168
 GameObject:
   m_ObjectHideFlags: 0

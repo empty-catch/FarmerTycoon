@@ -18,6 +18,17 @@ public class ItemUIElement : MonoBehaviour {
 
     [SerializeField]
     private Button buttonCommand;
+
+    [SerializeField]
+    private Image background;
+
+    private static Item tempItem;
+    
+    private static ItemUIElement currentSelectElement;
+    public static ItemUIElement CurrentSelectElement {
+        get => currentSelectElement;
+        set => currentSelectElement = value;
+    }
     
     private UIBase parent;
     
@@ -40,15 +51,29 @@ public class ItemUIElement : MonoBehaviour {
             return;
         }
 
+        if (tempItem == null || tempItem != information) {
+            tempItem = information;
+            CurrentSelectElement.ChangeColor(Color.yellow);
+        }
+
         ClickerSystem.Instance.Coin -= information.Cost[information.ItemLevel];
         var newParent = parent as StoreHUD;
         
         ItemData.Instance.TryGetItem(information.Key).IsUnlock = true;
         newParent.RefreshList();
 
+        CurrentSelectElement.ChangeColor(Color.white);
+        CurrentSelectElement = null;
+
+        tempItem = null;
+        
         if (information.Type == ItemType.Animal &&
             AnimalHandler.Instance.AddItem(information, information.ItemSprite)) {
             information.UseAsAnimal();
         }
+    }
+
+    public void ChangeColor(Color color) {
+        background.color = color;
     }
 }
