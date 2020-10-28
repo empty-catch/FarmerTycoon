@@ -73,10 +73,11 @@ public class InventoryItemElement : MonoBehaviour {
                 SingletonObject<PlantSelectUI>.Instance.Selected += index => {
                     itemData.UseAsPlant(index);
                     tempPlantItem = null;
-                    CurrentSelect?.SetColor(Color.white);
-                    CurrentSelect = null;
                     UIManager.Instance.CloseUI<PlantSelectUI>();
                 };
+                
+                CurrentSelect?.SetColor(Color.white);
+                CurrentSelect = null;
             }
             else {
                 tempPlantItem = itemData;
