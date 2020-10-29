@@ -247,7 +247,7 @@ MonoBehaviour:
     cost: 3ae800000000000074d001000000000074d0010000000000
     value: 9c180000ea240000863d0000
     itemLevel: 0
-    itemSprite: {fileID: 21300000, guid: 2a1eca7fa60d14c4197aa78cc6532822, type: 3}
+    itemSprite: {fileID: 21300000, guid: 38f0b0aef6aa174429873438e081f36c, type: 3}
     itemName: "\uC18C ( \uC77C\uBC18 )"
     itemDescription: 
     isUnlock: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
     value: 004b00008070000080bb0000
     itemLevel: 0
     itemSprite: {fileID: 21300000, guid: 9456d87e3a1f9ae4292470ac36906233, type: 3}
-    itemName: "\uC18C ( \uC77C\uBC18 )"
+    itemName: "\uC18C ( \uC740 )"
     itemDescription: 
     isUnlock: 0
     isUse: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
     cost: 582d020000000000b8e20a000000000070c5150000000000
     value: 902d010058c40100e8f10200
     itemLevel: 0
-    itemSprite: {fileID: 21300000, guid: 9456d87e3a1f9ae4292470ac36906233, type: 3}
+    itemSprite: {fileID: 21300000, guid: 4747ade54955f0a4ba21281ae7000248, type: 3}
     itemName: "\uC18C ( \uAE08 )"
     itemDescription: 
     isUnlock: 0
