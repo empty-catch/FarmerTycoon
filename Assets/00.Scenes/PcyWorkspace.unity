@@ -1339,14 +1339,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
-    - target: {fileID: 4317012575997972329, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317012575997972329, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8650179580991326292, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -1354,10 +1346,6 @@ PrefabInstance:
     - target: {fileID: 8650179581680808319, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8650179581864264466, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 18.75
       objectReference: {fileID: 0}
     - target: {fileID: 8650179581903531780, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1451,6 +1439,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main View
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1047509197480034775, guid: a8e1eac673833ce42be417647d7b319e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e1eac673833ce42be417647d7b319e, type: 3}

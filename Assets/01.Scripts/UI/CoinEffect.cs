@@ -25,7 +25,7 @@ public class CoinEffect : MonoBehaviour {
 
         var image = imageQueue.Dequeue();
         image.gameObject.SetActive(true);
-        image.anchoredPosition = new Vector2(Random.Range(0f, 540f), startY);
+        image.anchoredPosition = new Vector2(Random.Range(-540f, 0f), startY);
         image.localScale = Vector3.one;
 
         image.DOScale(0f, duration).SetEase(Ease.InExpo);
