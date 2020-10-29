@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class StageButtonContext : Context {
     public event Action StageChanged;
-    
+
     private readonly Property<string> stageNameProperty = new Property<string>();
     private readonly Property<ulong> costProperty = new Property<ulong>();
     private readonly Property<Color> colorProperty = new Property<Color>();
+    private bool hasUnlocked = false;
 
     public string StageName {
         get => stageNameProperty.Value;
@@ -30,6 +31,13 @@ public class StageButtonContext : Context {
     }
 
     public void ChangeStage() {
-        StageChanged?.Invoke();
+        if (hasUnlocked) {
+            StageChanged?.Invoke();
+        }
+        else if (ClickerSystem.Instance.Coin >= Cost) {
+            hasUnlocked = true;
+            ClickerSystem.Instance.Coin -= Cost;
+            StageChanged?.Invoke();
+        }
     }
 }
