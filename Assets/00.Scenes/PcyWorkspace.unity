@@ -140,6 +140,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
+    - target: {fileID: 474867807, guid: d658186e8ff924e7ca7c6e0d6fd595cb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 272.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 474867807, guid: d658186e8ff924e7ca7c6e0d6fd595cb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -221
+      objectReference: {fileID: 0}
     - target: {fileID: 342611574461649708, guid: d658186e8ff924e7ca7c6e0d6fd595cb, type: 3}
       propertyPath: m_Name
       value: InventoryHUD
@@ -242,6 +250,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626984844}
     m_Modifications:
+    - target: {fileID: 474867807, guid: 07e96768cb5334559b1847b0cf7eb25d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 133
+      objectReference: {fileID: 0}
+    - target: {fileID: 474867807, guid: 07e96768cb5334559b1847b0cf7eb25d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -221
+      objectReference: {fileID: 0}
     - target: {fileID: 342611574461649708, guid: 07e96768cb5334559b1847b0cf7eb25d, type: 3}
       propertyPath: m_Name
       value: StoreHUD
@@ -587,6 +603,18 @@ PrefabInstance:
     - target: {fileID: 284345584, guid: b0ab2651026e04a68adc1f6ca0fe6499, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -121.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 474867807, guid: b0ab2651026e04a68adc1f6ca0fe6499, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 272.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 474867807, guid: b0ab2651026e04a68adc1f6ca0fe6499, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -221
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831098592, guid: b0ab2651026e04a68adc1f6ca0fe6499, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -405.5
       objectReference: {fileID: 0}
     - target: {fileID: 342611574461649708, guid: b0ab2651026e04a68adc1f6ca0fe6499, type: 3}
       propertyPath: m_Name

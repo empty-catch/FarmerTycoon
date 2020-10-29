@@ -9,6 +9,7 @@ public class FarmerHandler : SingletonObject<FarmerHandler> {
     public void UpdateItem() {
         var tool = UserData.Instance.SelectTool;
         var costume = UserData.Instance.SelectCloset;
+        Debug.Log(costume.Key);
         var trimmedCostume = costume.Key == string.Empty
             ? "Farmer"
             : costume.ItemSprite.name.Replace("Costume", string.Empty);

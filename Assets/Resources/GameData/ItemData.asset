@@ -93,7 +93,7 @@ MonoBehaviour:
     isUnlock: 0
     isUse: 0
     type: 2
-  - key: NormalScissor
+  - key: Scissor_Normal
     cost: 200300000000000090010000000000002003000000000000
     value: 1e0000002d0000004b000000
     itemLevel: 0

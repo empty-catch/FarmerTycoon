@@ -77,8 +77,4 @@ public class UserData : ScriptableObject {
             SelectPlants[i] = null;
         }
     }
-
-    private void OnEnable() {
-        ResetUserData();
-    }
 }
