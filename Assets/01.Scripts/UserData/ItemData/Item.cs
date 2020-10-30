@@ -83,6 +83,7 @@ public class Item {
         var sprite = Resources.Load<Sprite>($"Planted/Planted{Key}");
         PlantHandler.Instance.AddItem(this, sprite, index);
         IsUnlock = false;
+        IsUse = true;
     }
 
     public void UseAsAnimal() {

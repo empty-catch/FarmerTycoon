@@ -39,14 +39,15 @@ public class StoreHUD : UIBase {
         for (int i = 0; i < items.Count; i++) {
             Destroy(items[i].gameObject);
         }
+
         items.Clear();
         CreateItems();
     }
-    
+
     private void CreateItems() {
         ItemData itemData = ItemData.Instance;
         for (int i = 0; i < itemData.Items.Count; i++) {
-            if (itemData.Items[i].IsUnlock) {
+            if (itemData.Items[i].IsUnlock || itemData.Items[i].Type == ItemType.Plant && itemData.Items[i].IsUse) {
                 continue;
             }
 
