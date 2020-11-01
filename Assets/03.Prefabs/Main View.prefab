@@ -5614,7 +5614,7 @@ GameObject:
   - component: {fileID: 8650179580991326291}
   - component: {fileID: 8650179580991326290}
   - component: {fileID: 4152668338319346595}
-  - component: {fileID: 5126759312368394483}
+  - component: {fileID: 3450054990336368553}
   m_Layer: 5
   m_Name: Touch Increment
   m_TagString: Untagged
@@ -5712,7 +5712,7 @@ MonoBehaviour:
   Data:
     Constant: 
     Path: TouchIncrement
-    Provider: {fileID: 5126759312368394483}
+    Provider: {fileID: 3450054990336368553}
     Reference: {fileID: 0}
     Type: 1
   TargetBinding:
@@ -5722,7 +5722,7 @@ MonoBehaviour:
     Reference: {fileID: 8650179580991326291}
     Type: 3
   constantTarget: {fileID: 0}
---- !u!114 &5126759312368394483
+--- !u!114 &3450054990336368553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5734,6 +5734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSimple: 1
   prefix: "\uC6D0/\uD130\uCE58"
   argument:
     Constant: 
@@ -6380,6 +6381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSimple: 0
   prefix: "\uC6D0"
   argument:
     Constant: 
@@ -6537,7 +6539,7 @@ GameObject:
   - component: {fileID: 8650179581903531801}
   - component: {fileID: 8650179581903531783}
   - component: {fileID: 4438746627015936174}
-  - component: {fileID: 1993983329340141230}
+  - component: {fileID: 713402989474837650}
   m_Layer: 5
   m_Name: Auto Increment
   m_TagString: Untagged
@@ -6635,7 +6637,7 @@ MonoBehaviour:
   Data:
     Constant: 
     Path: AutoIncrement
-    Provider: {fileID: 1993983329340141230}
+    Provider: {fileID: 713402989474837650}
     Reference: {fileID: 0}
     Type: 1
   TargetBinding:
@@ -6645,7 +6647,7 @@ MonoBehaviour:
     Reference: {fileID: 8650179581903531801}
     Type: 3
   constantTarget: {fileID: 0}
---- !u!114 &1993983329340141230
+--- !u!114 &713402989474837650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6657,6 +6659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSimple: 1
   prefix: "\uC6D0/\uC790\uB3D9"
   argument:
     Constant: 

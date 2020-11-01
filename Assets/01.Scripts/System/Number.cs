@@ -40,4 +40,33 @@ public static class Number {
     public static string ToKorean(this uint number) {
         return ToKorean((ulong)number);
     }
+
+    public static string ToSimpleKorean(this ulong number) {
+        var korean = number.ToKorean();
+        if (!korean.Contains("0000")) {
+            return korean;
+        }
+
+        Builder.Clear();
+        Builder.Append(korean);
+        Builder.Replace("0000", string.Empty);
+        var isPreviousLetter = false;
+
+        for (var i = 1; i < Builder.Length; i++) {
+            var isLetter = char.IsLetter(Builder[i]);
+            if (isLetter && isPreviousLetter) {
+                Builder.Remove(i, 1);
+                i--;
+            }
+            else {
+                isPreviousLetter = isLetter;
+            }
+        }
+
+        return Builder.ToString();
+    }
+
+    public static string ToSimpleKorean(this uint number) {
+        return ToSimpleKorean((ulong)number);
+    }
 }

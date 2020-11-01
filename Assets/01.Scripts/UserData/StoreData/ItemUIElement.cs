@@ -37,7 +37,7 @@ public class ItemUIElement : MonoBehaviour {
         information = itemData;
         eyeCatch.sprite = itemData.ItemSprite;
         name.text = itemData.ItemName;
-        cost.text = $"{itemData.Cost[itemData.ItemLevel].ToKorean().ToString()} 원";
+        cost.text = $"{itemData.Cost[itemData.ItemLevel].ToSimpleKorean()} 원";
         
         currentSelectElement?.ChangeColor(Color.white);
         currentSelectElement = null;

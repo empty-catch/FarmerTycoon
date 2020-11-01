@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 19420455}
   - component: {fileID: 19420454}
   - component: {fileID: 19420456}
-  - component: {fileID: 19420458}
   - component: {fileID: 19420457}
+  - component: {fileID: 8363110840360342464}
   m_Layer: 5
   m_Name: Auto Increment
   m_TagString: Untagged
@@ -96,25 +96,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &19420458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19420452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefix: "\uC6D0/\uC790\uB3D9"
-  argument:
-    Constant: 
-    Path: CoinContext.AutoIncrement
-    Provider: {fileID: 0}
-    Reference: {fileID: 0}
-    Type: 0
 --- !u!114 &19420457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +111,7 @@ MonoBehaviour:
   Data:
     Constant: 
     Path: 
-    Provider: {fileID: 19420458}
+    Provider: {fileID: 8363110840360342464}
     Reference: {fileID: 0}
     Type: 1
   TargetBinding:
@@ -140,6 +121,26 @@ MonoBehaviour:
     Reference: {fileID: 19420454}
     Type: 3
   constantTarget: {fileID: 0}
+--- !u!114 &8363110840360342464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19420452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSimple: 1
+  prefix: "\uC6D0/\uC790\uB3D9"
+  argument:
+    Constant: 
+    Path: CoinContext.AutoIncrement
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
 --- !u!1 &146655553
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +242,7 @@ GameObject:
   - component: {fileID: 394530098}
   - component: {fileID: 394530097}
   - component: {fileID: 394530100}
-  - component: {fileID: 394530101}
+  - component: {fileID: 1540727179983026322}
   m_Layer: 5
   m_Name: Touch Increment
   m_TagString: Untagged
@@ -339,7 +340,7 @@ MonoBehaviour:
   Data:
     Constant: 
     Path: CoinContext.TouchIncrement
-    Provider: {fileID: 394530101}
+    Provider: {fileID: 1540727179983026322}
     Reference: {fileID: 0}
     Type: 1
   TargetBinding:
@@ -349,7 +350,7 @@ MonoBehaviour:
     Reference: {fileID: 394530098}
     Type: 3
   constantTarget: {fileID: 0}
---- !u!114 &394530101
+--- !u!114 &1540727179983026322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,6 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSimple: 1
   prefix: "\uC6D0/\uD130\uCE58"
   argument:
     Constant: 
@@ -886,6 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52f215c17e94fd0a9da4862344a35a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSimple: 0
   prefix: "\uC6D0"
   argument:
     Constant: 
