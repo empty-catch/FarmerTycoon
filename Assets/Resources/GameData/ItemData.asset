@@ -16,12 +16,12 @@ MonoBehaviour:
   - key: Mushroom
     cost: 640000000000000032000000000000006400000000000000
     value: 030000000500000008000000
-    itemLevel: 0
+    itemLevel: 2
     itemSprite: {fileID: 21300000, guid: ce2132d527e98b9418ef24484e7399a8, type: 3}
     itemName: "\uBC84\uC12F"
     itemDescription: 
     isUnlock: 0
-    isUse: 0
+    isUse: 1
     type: 2
   - key: Carrot
     cost: 2c0100000000000096000000000000002c01000000000000
@@ -96,11 +96,11 @@ MonoBehaviour:
   - key: Scissor_Normal
     cost: 200300000000000090010000000000002003000000000000
     value: 1e0000002d0000004b000000
-    itemLevel: 0
+    itemLevel: 2
     itemSprite: {fileID: 21300000, guid: b87aaceff4f47a6409475926f002a571, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Scissor_Silver
@@ -120,7 +120,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: a4e8c0cca6ca7064198cd9ba93a94c84, type: 3}
     itemName: "\uC6D0\uC608 \uAC00\uC704 ( \uAE08 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Shovel_Normal
@@ -130,7 +130,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: 972f71a751b61314a9a8bdaaed7e91b2, type: 3}
     itemName: "\uBAA8\uC885\uC0BD ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Shovel_Silver
@@ -160,7 +160,7 @@ MonoBehaviour:
     itemSprite: {fileID: 21300000, guid: b7fe9903d876cad4395560f3db69579e, type: 3}
     itemName: "\uAC08\uD034 ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 3
   - key: Fork_Silver
@@ -186,11 +186,11 @@ MonoBehaviour:
   - key: Chiken_Normal
     cost: 3075000000000000983a0000000000003075000000000000
     value: dc050000ca080000a60e0000
-    itemLevel: 0
+    itemLevel: 2
     itemSprite: {fileID: 21300000, guid: 35aa3c947da9d0b45b16d90baa22002a, type: 3}
     itemName: "\uB2ED ( \uC77C\uBC18 )"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 1
   - key: Chiken_Silver
@@ -286,11 +286,11 @@ MonoBehaviour:
   - key: Cook
     cost: e093040000000000f049020000000000e093040000000000
     value: 204e00003075000050c30000
-    itemLevel: 0
+    itemLevel: 2
     itemSprite: {fileID: 21300000, guid: bf2bf54b13e364e4299d37c84a7220a9, type: 3}
     itemName: "\uC694\uB9AC\uC0AC\uBCF5"
     itemDescription: 
-    isUnlock: 0
+    isUnlock: 1
     isUse: 0
     type: 0
   - key: ReapairMan

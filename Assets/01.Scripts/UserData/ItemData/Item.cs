@@ -80,7 +80,7 @@ public class Item {
     public void UseAsPlant(int index) {
         UserData.Instance.SelectPlants[index] = this;
         ClickerSystem.Instance.PlantIncrement += Value[ItemLevel];
-        var sprite = Resources.Load<Sprite>($"Planted/Planted{Key}");
+        var sprite = Resources.Load<Sprite>($"Planted/{Key}");
         PlantHandler.Instance.AddItem(this, sprite, index);
         IsUnlock = false;
         IsUse = true;
